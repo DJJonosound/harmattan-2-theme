@@ -1,0 +1,16 @@
+
+MSceneWindowStyle#LockMostRecentArea {
+    background-image: "lockscreen-recent-event-area-background" 12 12 12 12;
+}
+
+
+MSceneWindowStyle#LockLandAreaDragged {
+    background-image: "lockscreen-lock-land-area-background-dragged" 25 25 25 25;
+
+}
+
+MSceneWindowStyle#LockLandAreaActive {
+    background-image: "lockscreen-lock-land-area-background-active" 25 25 25 25;
+
+}
+

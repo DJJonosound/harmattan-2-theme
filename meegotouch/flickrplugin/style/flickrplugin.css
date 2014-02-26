@@ -1,0 +1,35 @@
+MWindowStyle {
+    x11-startup-pixmap:;
+    startup-fill-color: $COLOR_INVERTED_BACKGROUND;
+}
+
+
+MApplicationWindowStyle#AccountsUiWindow {
+    navigation-bar-style-name:"MNavigationBarStyleInverted";
+    tool-bar-style-name: "MToolBarStyleInverted";
+}
+
+#AccountsUiPage.Landscape {
+    background-image: "meegotouch-applicationpage-background-inverted";
+}
+
+#AccountsUiPage.Portrait {
+    background-image: "meegotouch-applicationpage-portrait-background-inverted";
+}
+
+MLabelStyle#FlickrConnectingLabel {
+    font: $FONT_FAMILY bold 32;
+    color: #1080DD;
+}
+
+MLabelStyle#FlickrNoAccountLabel {
+    font: $FONT_DEFAULT_REGULAR;
+    color: $COLOR_INVERTED_FOREGROUND;
+}
+
+MLabelStyle#FlickrNoAccountLinkLabel {
+    font: $FONT_DEFAULT_REGULAR;
+    color: $COLOR_LINK;
+    highlight-color: $COLOR_LINK;
+    active-highlight-color: $COLOR_LINK_ACTIVE;
+}

@@ -1,0 +1,38 @@
+SearchPageTextEdit MTextEditStyle#CommonSearchField:selected {
+    background-image: color3-meegotouch-textedit-background-selected $CORNER_MARGINS;
+}
+
+SearchPageTextEdit MWidgetStyle#spinnerWidget {
+    minimum-size: 100% -1;
+    preferred-size: 100% -1;
+}
+
+MStylableWidget MWidgetStyle#spinnerContainer {
+    minimum-size: $SIZE_BUTTON $SIZE_BUTTON;
+    preferred-size: $SIZE_BUTTON $SIZE_BUTTON;
+    maximum-size: $SIZE_BUTTON $SIZE_BUTTON;
+    margin-top: $MARGIN_LARGE;
+    margin-bottom: $MARGIN_LARGE;
+    margin-right: $MARGIN_LARGE;
+    margin-left: $MARGIN_LARGE;
+}
+
+MStylableWidget#spinnerContainer MSpinnerStyle#CommonViewHeaderSpinner {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+SearchPageTextEdit MWidgetStyle#searchIconWidget {
+    minimum-size: 100% -1;
+    preferred-size: 100% -1;
+}
+
+MStylableWidget MImageWidgetStyle#CommonSearchMagnifierIcon {
+    margin-right: $MARGIN_XLARGE;
+}
+
+SearchPageTextEdit MWidgetStyle#clearButtonWidget {
+    minimum-size: 100% -1;
+    preferred-size: 100% -1;
+}
+

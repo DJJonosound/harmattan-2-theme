@@ -1,0 +1,144 @@
+@import "volume.css";
+
+MWidgetStyle#StatusBarLandscapeWidget {
+    padding-left: 0.4mm;
+    padding-right: 0.4mm;
+    padding-top: 0.4mm;
+}
+
+MWidgetStyle#StatusBarPortraitWidget {
+    padding-left: 0.4mm;
+    padding-right: 0.4mm;
+    padding-top: 0.4mm;
+}
+
+MWidgetStyle#StatusBarLandscapeWidgetCall {
+    background-image: "meegotouch-statusarea-background-call";
+    padding-left: 0.4mm;
+    padding-right: 0.4mm;
+    padding-top: 0.4mm;
+}
+
+MWidgetStyle#StatusBarPortraitWidgetCall {
+    background-image: "meegotouch-statusarea-background-call";
+    padding-left: 0.4mm;
+    padding-right: 0.4mm;
+    padding-top: 0.4mm;
+}
+
+StatusIndicatorMenuStyle {
+    padding-top: 0;
+    notification-area: false;
+    background-opacity: 0.8;
+    minimum-size: 100% -1;
+    preferred-size: 100% -1;
+    maximum-size: 100% -1;
+}
+
+StatusIndicatorMenuStyle.Landscape {
+    minimum-size: 49.2mm 44.4mm;
+    preferred-size: 49.2mm 44.4mm;
+    maximum-size: 49.2mm 44.4mm;
+}
+
+StatusIndicatorMenu MWidgetSlideAnimationStyle#In.Landscape {
+    origin: "left";
+}
+
+StatusIndicatorMenu MWidgetSlideAnimationStyle#Out.Landscape {
+    origin: "left";
+}
+
+#MenuSceneLayerEffect {
+    background-image: "meegotouch-statusmenu-dimmer";
+}
+
+MSceneManagerStyle {
+    application-menu-animation: "MWidgetSlideAnimation";
+}
+
+ScreenLockWindowStyle {
+    locked-orientation: "portrait";
+    translucent: true;
+}
+
+MApplicationExtensionAreaStyle#StatusIndicatorMenuExtensionArea {
+    padding-left: 0mm;
+    padding-right: 0mm;
+    background-image: ;
+    layout-orientation: vertical;
+    container-mode: false;
+    background-color: $COLOR_INVERTED_BACKGROUND;
+}
+
+MWidgetStyle#StatusIndicatorMenuExtensionAreaWidget {
+    background-image: ;
+}
+
+MWidgetStyle#StatusIndicatorMenuExtensionAreaWidget.Landscape {
+    minimum-size: -1 44.4mm;
+    preferred-size: -1 44.4mm;
+    maximum-size: -1 44.4mm;
+    background-color: $COLOR_INVERTED_BACKGROUND;
+}
+
+MWidgetStyle#StatusIndicatorMenuBottomSeparator.Portrait {
+    background-image: "meegotouch-statusmenu-shadow-horizontal";
+    minimum-size: -1 1.2mm;
+    preferred-size: -1 1.2mm;
+    maximum-size: -1 1.2mm;
+}
+
+MWidgetStyle#StatusIndicatorMenuBottomSeparator.Landscape {
+    minimum-size: -1 0;
+    preferred-size: -1 0;
+    maximum-size: -1 0;
+}
+
+MWidgetStyle#StatusIndicatorMenuRightSeparator.Portrait {
+    minimum-size: 0 -1;
+    preferred-size: 0 -1;
+    maximum-size: 0 -1;
+}
+
+MWidgetStyle#StatusIndicatorMenuRightSeparator.Landscape {
+    background-image: "meegotouch-statusmenu-shadow-vertical";
+    minimum-size: 1.2mm -1;
+    preferred-size: 1.2mm -1;
+    maximum-size: 1.2mm -1;
+}
+
+MPannableWidgetStyle#StatusIndicatorMenuViewport {
+    background-image: ;
+}
+
+MWidgetZoomAnimationStyle#In {
+    opacity-animation-delay: 0;
+    opacity-animation-duration: 500;
+    opacity-animation-easing-curve: overshotbezier;
+
+    scale-animation-duration: 500;
+    scale-animation-easing-curve: overshotbezier;
+
+    delay: 50;
+    scale: 0.25;
+    opacity: 1;
+ 
+    position-animation-distance-factor: 0;
+}
+
+MButtonIconStyle#StatusIndicatorMenuTopRowExtensionButton.Landscape {
+    minimum-size: 54.4mm 8.0mm;
+    preferred-size: 54.4mm 8.0mm;
+    maximum-size: 54.4mm 8.0mm;
+
+    padding-left: 2.6mm;
+}
+
+MButtonIconStyle#StatusIndicatorMenuTopRowExtensionButton.Portrait {
+    minimum-size: 44.8mm 8.0mm;
+    preferred-size: 44.8mm 8.0mm;
+    maximum-size: 44.8mm 8.0mm;
+
+    padding-left: 1.0mm;
+}

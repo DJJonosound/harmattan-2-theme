@@ -1,0 +1,37 @@
+@import "../../libAccountPlugin/style/libAccountPlugin.css";
+
+CaldavHeaderWidgetStyle {
+    header-icon: "icon-m-service-caldav";
+}
+
+MWindowStyle {
+    x11-startup-pixmap: none;//  meegotouch-accounts-splash-black;
+    startup-fill-color: $COLOR_INVERTED_BACKGROUND;
+}
+
+MApplicationWindowStyle#AccountsUiWindow {
+    x11-startup-pixmap: none;//  meegotouch-accounts-splash-black;
+    startup-fill-color: $COLOR_INVERTED_BACKGROUND;
+    navigation-bar-style-name:"MNavigationBarStyleInverted";
+    tool-bar-style-name: "MToolBarStyleInverted";
+    tab-bar-style-name: "MToolbarTabStyleInverted";
+} 
+
+CaldavEditWidgetStyle {
+    background-color: transparent;
+}
+
+#ColorWidgetStyle {
+    margin-right: $INDENT_DEFAULT;
+
+    minimum-size: 0.6mm 2.8mm;
+    maximum-size: 0.6mm 2.8mm;
+    preferred-size: 0.6mm 2.8mm;
+}
+
+MLabelStyle#ConnectionLabelStyle {
+    font: $FONT_FAMILY bold 3.2mm;
+    color: $COLOR_ACCENT1;
+    margin-top: 2.4mm;
+    margin-bottom : 2.4mm;
+}

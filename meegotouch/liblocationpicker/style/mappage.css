@@ -1,0 +1,13 @@
+MapPage MBasicSheetHeaderStyle#CommonSheetHeaderPanel {
+    positive-action-style-name: "CommonSheetHeaderButtonAccent";
+    negative-action-style-name: "CommonSheetHeaderButton";
+}
+
+MapPage MButtonStyle#CommonSheetHeaderButtonAccent {
+    background-image: color3-meegotouch-sheet-button-accent-background $CORNER_MARGINS;
+}
+
+MapPage MButtonStyle#CommonSheetHeaderButtonAccent:pressed {
+    background-image: color3-meegotouch-sheet-button-accent-background-pressed $CORNER_MARGINS;
+}
+

@@ -1,0 +1,23 @@
+#CertificateButton.Landscape {
+    maximum-size: 300 -1;
+}
+
+#CertificateButton.Portrait {
+    maximum-size: 300 -1;
+}
+
+CertificateItemWidget MLabelStyle#CommonSubTextInverted {
+    color: $COLOR_WARNING;
+}
+
+/*
+    Left commented incase there are requests to switch back to a
+    background image in empty state views
+CertificateFileListDialog MLabelStyle#CommonEmptyStateTitleInverted {
+    background-image: "meegotouch-accounts-portrait-background";
+}
+
+CertificatesListWidget MLabelStyle#CommonEmptyStateTitleInverted {
+    background-image: "meegotouch-accounts-portrait-background";
+}
+*/

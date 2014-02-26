@@ -1,0 +1,16 @@
+#TempCommonInvertedButtonDimensionsLabel {
+    color: $COLOR_SECONDARY_FOREGROUND;
+    font: $FONT_SMALL;
+    margin-right : $INDENT_DEFAULT;
+    margin-left : $MARGIN_SMALL;
+    paint-offset: 0, -7px;
+}
+
+#TempCommonInvertedButtonInformationLabel {
+    color: $COLOR_SECONDARY_FOREGROUND;
+    font: $FONT_DEFAULT_BOLD;
+    margin-right : $MARGIN_SMALL;
+    margin-left : $INDENT_DEFAULT;
+    paint-offset: 0, -7px;
+}
+

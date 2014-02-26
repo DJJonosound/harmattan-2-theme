@@ -1,0 +1,1511 @@
+//Including the carmode styles of call-ui
+@import "carmode-call-ui.css" // * Plugs the carmode styles for callui *
+/*
+    NOTE:
+        Telephony layout guide was built using 35px status bar.
+        Here we assume using the whole page height (screen height -status bar)
+        and add the -1px correction into any value relative to available screen
+        height.
+*/
+
+// ***************************************************************************
+// ** CONSTANTS **************************************************************
+
+// ** screen (page) dimensions **
+@const PAGE_HEIGHT                     : 818px; // == full height (854px) - $HEIGHT_STATUSBAR (36px)
+@const PAGE_WIDTH                      : 480px; // == full width (480px)
+
+@const PAGE_HEIGHT_LS                  : 444px; // == full height (480px) - $HEIGHT_STATUSBAR (36px)
+@const PAGE_WIDTH_FULL_LS              : 854px;
+
+// ** CallWidget **
+@const CALLWIDGET_SIZE                 : $PAGE_WIDTH 544px;
+@const CALLWIDGET_SIZE_MINIMIZED       : $PAGE_WIDTH 64px;
+@const CALLWIDGET_SIZE_VIDEO           : $PAGE_WIDTH_FULL_LS $PAGE_HEIGHT_LS;
+@const CALLWIDGET_SIZE_VIDEO_MINIMIZED : $PAGE_WIDTH_FULL_LS 64px;
+@const CALLWIDGET_SIZE_VIDEO_MAXIMIZED : $PAGE_WIDTH 380px; // PAGE_HEIGHT_LS - 64
+
+// ** Avatar **
+@const AVATAR_SIZE               : 64px 64px;
+
+// ** InfoPanel **
+@const CALLINFO_SIZE_NORMAL             : $PAGE_WIDTH 124px;
+@const CALLINFO_SIZE_NORMAL_MAX         : $PAGE_WIDTH    -1;
+@const CALLINFO_SIZE_MINIMIZED          : $PAGE_WIDTH  64px;
+@const CALLINFO_SIZE_VIDEO              : 592px 85px;
+@const CALLINFO_SIZE_VIDEOPAGE_INCOMING     : $PAGE_WIDTH 124px; // FIXME: random value
+@const CALLINFO_SIZE_VIDEOPAGE_INCOMING_MAX : $PAGE_WIDTH    -1; // FIXME: random value
+
+
+
+// ***************************************************************************
+// ** Window overrides *******************************************************
+
+MWindowStyle {
+    x11-startup-pixmap:;
+    startup-fill-color: #000000;
+}
+
+MWindowStyle.Portrait {
+    x11-startup-pixmap:;
+    startup-fill-color: #000000;
+}
+
+MWindowStyle.Landscape {
+    x11-startup-pixmap:;
+    startup-fill-color: #000000;
+}
+
+MApplicationWindowStyle#DisabledStatusMenu {
+    status-bar-style-name: "CommonStatusBarNoMenu";
+}
+
+
+// ***************************************************************************
+// ** Container (application page) *******************************************
+
+#CallApplicationPage {
+    offset           : 0 0;
+
+    minimum-size     : 100% 100%;
+    preferred-size   : 100% 100%;
+    maximum-size     : 100% 100%;
+
+    margin-left      : 0;
+    margin-right     : 0;
+    margin-top       : 0;
+    margin-bottom    : 0;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+
+    background-color : #000000;
+
+    background-image :;
+}
+
+
+// ***************************************************************************
+// ** CallAvatar *************************************************************
+
+#CallAvatar {
+    margin-left      : 0;
+    margin-right     : 0;
+    margin-top       : 0;
+    margin-bottom    : 0;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+
+    preferred-size   : -1 -1;
+    minimum-size     : -1 -1;
+    maximum-size     : -1 -1;
+
+    background-color :;
+    background-image :;
+
+    press-feedback   :;
+    release-feedback :;
+    cancel-feedback  :;
+}
+
+#CallAvatar:pressed {
+    background-color :;
+    background-image :;
+}
+
+#CallAvatarImage {
+    margin-left    : 0;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    padding-left   : 0;
+    padding-right  : 0;
+    padding-top    : 0;
+    padding-bottom : 0;
+
+    preferred-size : $AVATAR_SIZE;
+    minimum-size   : $AVATAR_SIZE;
+    maximum-size   : $AVATAR_SIZE;
+}
+
+#ConfCallAvatarButton {
+    background-image   : meegotouch-callui-button-shadowed-background $CORNER_MARGINS;
+    background-color   :;
+    text-color         :;
+
+    padding-left       : 0;
+    padding-top        : 0;
+    padding-right      : 0;
+    padding-bottom     : 0;
+
+    icon-size          : 40px 40px;
+    icon-align         : center;
+
+    margin-left        : 0;
+    margin-top         : 0;
+    margin-right       : 0;
+    margin-bottom      : 0;
+
+    text-margin-left   : 0;
+    text-margin-top    : 0;
+    text-margin-right  : 0;
+    text-margin-bottom : 0;
+
+    preferred-size     : $AVATAR_SIZE;
+    minimum-size       : $AVATAR_SIZE;
+    maximum-size       : $AVATAR_SIZE;
+
+    press-feedback     :;
+    release-feedback   :;
+}
+
+#ConfCallAvatarButton:pressed {
+    background-image   : meegotouch-callui-button-shadowed-background-pressed $CORNER_MARGINS;
+    background-color   :;
+}
+
+
+// ***************************************************************************
+// ** CallInfoPanel **********************************************************
+
+CallInfoPanelStyle {
+    margin-left      : 0;
+    margin-right     : 0;
+    margin-top       : 0;
+    margin-bottom    : 0;
+
+    padding-left     : $MARGIN_XLARGE;
+    padding-right    : $MARGIN_XLARGE;
+    padding-top      : 8px;
+    padding-bottom   : 0px;
+
+    background-image :;
+    background-color :;
+
+    press-feedback   :;
+    release-feedback :;
+    cancel-feedback  :;
+}
+
+#CallInfoPanel_Normal {
+    minimum-size   : $CALLINFO_SIZE_NORMAL;
+    maximum-size   : $CALLINFO_SIZE_NORMAL_MAX;
+    preferred-size : $CALLINFO_SIZE_NORMAL_MAX;
+}
+
+#CallInfoPanel_Minimized {
+    padding-top    : 0;
+
+    minimum-size   : $CALLINFO_SIZE_MINIMIZED;
+    maximum-size   : $CALLINFO_SIZE_MINIMIZED;
+    preferred-size : $CALLINFO_SIZE_MINIMIZED;
+}
+
+#CallInfoPanel_Video {
+    minimum-size       : $CALLINFO_SIZE_VIDEO;
+    maximum-size       : $CALLINFO_SIZE_VIDEO;
+    preferred-size     : $CALLINFO_SIZE_VIDEO;
+
+    padding-left       : 0px;
+
+    background-color   : #000000;
+    background-opacity : 0.30;
+}
+
+#CallInfoPanel_VideoPage_Incoming {
+    minimum-size   : $CALLINFO_SIZE_VIDEOPAGE_INCOMING;
+    maximum-size   : $CALLINFO_SIZE_VIDEOPAGE_INCOMING_MAX;
+    preferred-size : $CALLINFO_SIZE_VIDEOPAGE_INCOMING_MAX;
+
+    // FIXME: hack for pushing buttons down a bit to workaround some
+    // serious insanity with MGridLayoutPolicy
+    //margin-bottom  : 72px;
+}
+
+
+// ***************************************************************************
+// ** Buttons ****************************************************************
+
+MButtonStyle:disabled {
+    background-image : none;
+    background-color : none;
+    text-color       : none;
+}
+
+MButtonStyle:disabled-selected {
+    background-image : none;
+    background-image : none;
+    text-color       : none;
+}
+
+
+#CallUi_EndButton {
+    background-image : meegotouch-callui-button-reject-background $CORNER_MARGINS;
+
+    preferred-size   : 210px 64px;
+    minimum-size     : 210px 64px;
+    maximum-size     : 210px 64px;
+
+    icon-align       : center;
+    icon-size        : 48px 48px;
+
+    press-feedback   : priority2_callbutton_press;
+    release-feedback : priority2_callbutton_release;
+    cancel-feedback  :;
+
+    margin-left      : 0;
+    margin-right     : 0;
+    margin-top       : 0;
+    margin-bottom    : 0;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+}
+
+#CallUi_EndButton:pressed {
+    background-image : meegotouch-callui-button-reject-background-pressed $CORNER_MARGINS;
+}
+
+#CallUi_EndButton_Video {
+    background-image : meegotouch-callui-button-reject-background $CORNER_MARGINS;
+
+    preferred-size   : 230px 64px;
+    minimum-size     : 230px 64px;
+    maximum-size     : 230px 64px;
+
+    icon-align       : center;
+    icon-size        : 48px 48px;
+
+    press-feedback   : priority2_callbutton_press;
+    release-feedback : priority2_callbutton_release;
+    cancel-feedback  :;
+
+    margin-left      : $MARGIN_XLARGE;
+    margin-right     : $MARGIN_XLARGE;
+    margin-top       : $MARGIN_XLARGE;
+    margin-bottom    : $MARGIN_XLARGE;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+}
+
+#CallUi_EndButton_Video:pressed {
+    background-image : meegotouch-callui-button-reject-background-pressed $CORNER_MARGINS;
+}
+
+
+#CallUi_RedialButton {
+    background-image : meegotouch-callui-button-answer-background $CORNER_MARGINS;
+
+    preferred-size   : 210px 64px;
+    minimum-size     : 210px 64px;
+    maximum-size     : 210px 64px;
+
+    icon-id          :;
+
+    press-feedback   : priority2_callbutton_press;
+    release-feedback : priority2_callbutton_release;
+    cancel-feedback  :;
+
+    font             : $FONT_FAMILY bold uppercase 2.2mm ;//22px
+    text-color       : #F5F5F5;
+
+    margin-left      : 0;
+    margin-right     : 0;
+    margin-top       : 0;
+    margin-bottom    : 24px;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+}
+
+#CallUi_RedialButton:pressed {
+    background-image : meegotouch-callui-button-answer-background-pressed $CORNER_MARGINS;
+}
+
+
+#CallUi_RejectButton {
+    background-image : meegotouch-callui-button-reject-background $CORNER_MARGINS;
+
+    preferred-size   : 210px 64px;
+    minimum-size     : 210px 64px;
+    maximum-size     : 210px 64px;
+
+    margin-left      : 12px; // 24px / 2
+    margin-right     : 0;
+    margin-top       : 0;
+    margin-bottom    : 0;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+
+    icon-align       : center;
+    icon-size        : 48px 48px;
+
+    press-feedback   : priority2_callbutton_press;
+    release-feedback : priority2_callbutton_release;
+    cancel-feedback  :;
+}
+
+#CallUi_RejectButton:pressed {
+    background-image : meegotouch-callui-button-reject-background-pressed $CORNER_MARGINS;
+}
+
+
+#CallUi_AnswerButton {
+    background-image : meegotouch-callui-button-answer-background $CORNER_MARGINS;
+
+    preferred-size   : 210px 64px;
+    minimum-size     : 210px 64px;
+    maximum-size     : 210px 64px;
+
+    margin-left      : 0;
+    margin-right     : 12px; // 24px / 2
+    margin-top       : 0;
+    margin-bottom    : 0;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+
+    icon-align       : center;
+    icon-size        : 48px 48px;
+
+    press-feedback   : priority2_callbutton_press;
+    release-feedback : priority2_callbutton_release;
+    cancel-feedback  :;
+}
+
+#CallUi_AnswerButton:pressed {
+    background-image : meegotouch-callui-button-answer-background-pressed $CORNER_MARGINS;
+}
+
+
+#CallUi_SendMessageButton {
+    background-image : meegotouch-callui-button-general-background $CORNER_MARGINS;
+
+    preferred-size   : 210px 64px;
+    minimum-size     : 210px 64px;
+    maximum-size     : 210px 64px;
+
+    margin-left      : 12px; // 18px -buttom group left margin
+    margin-right     : 12px; // 24px / 2
+    margin-top       : 0;
+    margin-bottom    : 0;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+
+    icon-align       : center;
+    icon-size        : 48px 48px;
+
+    press-feedback   :;
+    release-feedback :;
+    cancel-feedback  :;
+}
+
+#CallUi_SendMessageButton:pressed {
+    background-image : meegotouch-callui-button-general-background-pressed $CORNER_MARGINS;
+    background-color :;
+}
+
+
+#CallUi_IconButton {
+    font                  : $FONT_FAMILY light 1.8mm;//18px
+    text-color            : #8C8C8C;
+    vertical-text-align   : vcenter;
+    horizontal-text-align : hcenter;
+
+    icon-size             : 64px 64px;
+    icon-align            : center;
+
+    background-color      :;
+    background-image      :;
+
+    margin-left           : 0px;
+    margin-right          : 0px;
+    margin-top            : 26px; // button margin (22) + separator bottom margin (4)
+    margin-bottom         : 0px;
+
+    minimum-size          : 95px 87px;  // full height (113) - top margin (26)
+    preferred-size        : 95px 87px;
+    maximum-size          : 95px 87px;
+
+    press-feedback        :;
+    release-feedback      :;
+    cancel-feedback       :;
+
+    text-margin-left      : 0;
+    text-margin-top       : 5px;
+    text-margin-right     : 0;
+    text-margin-bottom    : 0;
+
+    text-wrap-mode        : nowrap;
+    text-eliding          : false;
+}
+
+#CallUi_IconButton:pressed {
+    background-image :;
+    background-color :;
+}
+
+#CallUi_IconButton:selected {
+    background-image :;
+    background-color :;
+}
+
+
+#CallUi_VideoButton {
+    background-image : meegotouch-callui-button-shadowed-background $CORNER_MARGINS;
+    background-color : none;
+
+
+    preferred-size   : 210px 64px;
+    minimum-size     : 210px 64px;
+    maximum-size     : 210px 64px;
+
+    icon-align       : center;
+    icon-size        : 48px 48px;
+
+    icon-id          : "icon-m-telephony-video-call-button";
+
+    press-feedback   :;
+    release-feedback :;
+    cancel-feedback  :;
+
+    margin-left      : 0;
+    margin-right     : 0;
+    margin-top       : 0;
+    margin-bottom    : 24px;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+
+    content-opacity  : 1.0;
+}
+
+#CallUi_VideoButton:pressed {
+    background-image : meegotouch-callui-button-shadowed-background-pressed $CORNER_MARGINS;
+    background-color : none;
+}
+
+#CallUi_VideoButton:disabled {
+    background-image : meegotouch-callui-button-shadowed-background $CORNER_MARGINS;
+    background-color : none;
+    content-opacity  : 0.3;
+}
+
+
+#CallUi_SpeakerButton {
+    font                  : $FONT_FAMILY light 1.8mm;//18px
+    text-color            : #8C8C8C;
+    vertical-text-align   : vcenter;
+    horizontal-text-align : hcenter;
+
+    icon-size             : 64px 64px;
+    icon-align            : center;
+
+    background-color      :;
+    background-image      :;
+
+    margin-left           : 0px;
+    margin-right          : 14px;
+    margin-top            : 26px; // button margin (22) + separator bottom margin (4)
+    margin-bottom         : 0px;
+
+    minimum-size          : 95px 92px;  // full height (113) - top margin (26) + text margin (5)
+    preferred-size        : 95px 92px;
+    maximum-size          : 95px 92px;
+
+    press-feedback        :;
+    release-feedback      :;
+    cancel-feedback       :;
+
+    text-margin-left      : 0;
+    text-margin-top       : 0;
+    text-margin-right     : 0;
+    text-margin-bottom    : 0;
+
+    text-wrap-mode        : nowrap;
+    text-eliding          : false;
+}
+
+#CallUi_SpeakerButton:pressed {
+    background-image :;
+    background-color :;
+}
+
+#CallUi_SpeakerButton:selected {
+    background-image :;
+    background-color :;
+}
+
+
+#CallUi_MuteButton {
+    font                  : $FONT_FAMILY light 1.8mm;//18px
+    text-color            : #8C8C8C;
+    vertical-text-align   : vcenter;
+    horizontal-text-align : hcenter;
+
+    icon-size             : 64px 64px;
+    icon-align            : center;
+
+    background-color      :;
+    background-image      :;
+
+    margin-left           : 15px;
+    margin-right          : 15px;
+    margin-top            : 26px; // button margin (22) + separator bottom margin (4)
+    margin-bottom         : 0px;
+
+    minimum-size          : 95px 92px;  // full height (113) - top margin (26) + text margin (5)
+    preferred-size        : 95px 92px;
+    maximum-size          : 95px 92px;
+
+    press-feedback        :;
+    release-feedback      :;
+    cancel-feedback       :;
+
+    text-margin-left      : 0;
+    text-margin-top       : 0;
+    text-margin-right     : 0;
+    text-margin-bottom    : 0;
+
+    text-wrap-mode        : nowrap;
+    text-eliding          : false;
+}
+
+#CallUi_MuteButton:pressed {
+    background-image :;
+    background-color :;
+}
+
+#CallUi_MuteButton:selected {
+    background-image :;
+    background-color :;
+}
+
+#CallUi_MuteButton_Video {
+    font                  : $FONT_FAMILY light 1.8mm;//18px
+    text-color            : #C8C8C8;
+    vertical-text-align   : vcenter;
+    horizontal-text-align : hcenter;
+
+    icon-size             : 64px 64px;
+    icon-align            : center;
+
+    background-color      :;
+    background-image      :;
+
+    margin-left           : 0;
+    margin-right          : 0;
+    margin-top            : $MARGIN_XLARGE;
+    margin-bottom         : 0;
+
+    padding-left          : 0;
+    padding-right         : 0;
+    padding-top           : 0;
+    padding-bottom        : 0;
+
+    minimum-size          : -1 87px;
+    preferred-size        : -1 87px;
+    maximum-size          : -1 87px;
+
+    press-feedback        :;
+    release-feedback      :;
+    cancel-feedback       :;
+
+    text-margin-left      : 0;
+    text-margin-top       : 0;
+    text-margin-right     : 0;
+    text-margin-bottom    : 0;
+
+    text-wrap-mode        : nowrap;
+    text-eliding          : false;
+}
+
+#CallUi_MuteButton_Video:pressed {
+    background-image :;
+    background-color :;
+}
+
+#CallUi_MuteButton_Video:selected {
+    background-image :;
+    background-color :;
+}
+
+
+#CallUi_HoldButton {
+    font                  : $FONT_FAMILY light 1.8mm;//18px
+    text-color            : #8C8C8C;
+    vertical-text-align   : vcenter;
+    horizontal-text-align : hcenter;
+
+    icon-size             : 64px 64px;
+    icon-align            : center;
+
+    background-color      :;
+    background-image      :;
+
+    margin-left           : 15px;
+    margin-right          : 15px;
+    margin-top            : 26px; // button margin (22) + separator bottom margin (4)
+    margin-bottom         : 0px;
+
+    minimum-size          : 95px 92px;  // full height (113) - top margin (26) + text margin (5)
+    preferred-size        : 95px 92px;
+    maximum-size          : 95px 92px;
+
+    press-feedback        :;
+    release-feedback      :;
+    cancel-feedback       :;
+
+    text-margin-left      : 0;
+    text-margin-top       : 0;
+    text-margin-right     : 0;
+    text-margin-bottom    : 0;
+
+    text-wrap-mode        : nowrap;
+    text-eliding          : false;
+}
+
+#CallUi_HoldButton:pressed {
+    background-image :;
+    background-color :;
+}
+
+#CallUi_HoldButton:selected {
+    background-image :;
+    background-color :;
+}
+
+
+#CallUi_DialpadButton {
+    font                  : $FONT_FAMILY light 1.8mm;//18px
+    text-color            : #8C8C8C;
+    vertical-text-align   : vcenter;
+    horizontal-text-align : hcenter;
+
+    icon-size             : 64px 64px;
+    icon-align            : center;
+
+    background-color      :;
+    background-image      :;
+
+    margin-left           : 14px;
+    margin-right          : 0px;
+    margin-top            : 26px; // button margin (22) + separator bottom margin (4)
+    margin-bottom         : 0px;
+
+    minimum-size          : 95px 92px;  // full height (113) - top margin (26) + text margin (5)
+    preferred-size        : 95px 92px;
+    maximum-size          : 95px 92px;
+
+    press-feedback        :;
+    release-feedback      :;
+    cancel-feedback       :;
+
+    text-margin-left      : 0;
+    text-margin-top       : 0;
+    text-margin-right     : 0;
+    text-margin-bottom    : 0;
+
+    text-wrap-mode        : nowrap;
+    text-eliding          : false;
+}
+
+#CallUi_DialpadButton:pressed {
+    background-image :;
+    background-color :;
+}
+
+#CallUi_DialpadButton:selected {
+    background-image :;
+    background-color :;
+}
+
+
+#CallUi_ViewMenuButton {
+    background-image :;
+    background-color :;
+
+    icon-align       : center;
+    icon-size        : 48px 48px;
+
+    preferred-size   : 48px 48px;
+    minimum-size     : 48px 48px;
+    maximum-size     : 48px 48px;
+
+    press-feedback   :;
+    release-feedback :;
+    cancel-feedback  :;
+
+    margin-left      :  0px;
+    margin-right     :  0px;
+    margin-top       : 16px;
+    margin-bottom    :  0px;
+}
+
+#CallUi_ViewMenuButton:pressed {
+    background-image :;
+    background-color :;
+}
+
+
+#CallUi_SilenceButton {
+    preferred-size   : 210px 64px;
+    minimum-size     : 210px 64px;
+    maximum-size     : 210px 64px;
+
+    margin-left      : 0;
+    margin-right     : 0;
+    margin-top       : 0;
+    margin-bottom    : 0;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+
+    icon-align       : center;
+    icon-size        : 48px 48px;
+
+    press-feedback   :;
+    release-feedback :;
+    cancel-feedback  :;
+
+    background-image : meegotouch-callui-button-shadowed-background $CORNER_MARGINS;
+    background-color :;
+
+    content-opacity  : 1.0;
+}
+
+#CallUi_SilenceButton:pressed {
+    background-image : meegotouch-callui-button-shadowed-background-pressed $CORNER_MARGINS;
+    background-color :;
+}
+
+#CallUi_SilenceButton:disabled {
+    background-image : meegotouch-callui-button-shadowed-background $CORNER_MARGINS;
+    background-color :;
+    content-opacity  : 0.3;
+}
+
+
+#CallUi_ButtonGroup {
+    margin-left    : 0;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    padding-left   :  6px;
+    padding-right  :  6px;
+    padding-top    :  0px;
+    padding-bottom : 24px;
+
+    preferred-size : $PAGE_WIDTH 420px;
+    minimum-size   : $PAGE_WIDTH 420px;
+    maximum-size   : $PAGE_WIDTH 420px;
+}
+
+#CallUi_ButtonGroup_Incoming {
+    margin-left    : 0;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    padding-left   :  18px;
+    padding-right  :  18px;
+    padding-top    :  16px;
+    padding-bottom : 113px;
+
+    preferred-size : $PAGE_WIDTH 420px;
+    minimum-size   : $PAGE_WIDTH 420px;
+    maximum-size   : $PAGE_WIDTH 420px;
+}
+
+#CallUi_ButtonGroup_VideoPage_Incoming {
+    margin-left    : 0;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    padding-left   :  16px;
+    padding-right  :  16px;
+    padding-top    :  16px;
+    padding-bottom :  24px;
+
+    preferred-size : $PAGE_WIDTH 240px;
+    minimum-size   : $PAGE_WIDTH 240px;
+    maximum-size   : $PAGE_WIDTH 240px;
+}
+
+#CallUi_SplitButton {
+    icon-size             : 64px 64px;
+    icon-align            : center;
+
+    background-image      :;
+    background-color      :;
+
+    margin-left           : 16px;
+    margin-right          : 0;
+    margin-top            : 0;
+    margin-bottom         : 0;
+
+    minimum-size          : 64px 64px;
+    preferred-size        : 64px 64px;
+    maximum-size          : 64px 64px;
+
+    press-feedback        :;
+    release-feedback      :;
+    cancel-feedback       :;
+}
+
+#CallUi_SplitButton:pressed {
+    background-image :;
+    background-color :;
+}
+
+
+#CallUi_DropButton {
+    icon-size             : 64px 64px;
+    icon-align            : center;
+
+    background-image      :;
+    background-color      :;
+
+    margin-left           : 16px;
+    margin-right          : 0;
+    margin-top            : 0;
+    margin-bottom         : 0;
+
+    minimum-size          : 64px 64px;
+    preferred-size        : 64px 64px;
+    maximum-size          : 64px 64px;
+
+    press-feedback        : priority2_callbutton_press;
+    release-feedback      : priority2_callbutton_release;
+    cancel-feedback       :;
+}
+
+#CallUi_DropButton:pressed {
+    background-image :;
+    background-color :;
+}
+
+
+// The mode switch slider
+SliderWidgetStyle {
+    minimum-size     : 128px 64px;
+    preferred-size   : 128px 64px;
+    maximum-size     : 128px 64px;
+
+    margin-bottom    : 0;
+    margin-right     : $MARGIN_XLARGE;
+    margin-top       : $MARGIN_XLARGE;
+    margin-left      : 0;
+
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+
+    size             : 128px 64px;
+
+    thumb-size       : 54px 54px;
+    thumb-margin     : 5px;
+
+    icon-size        : 48px 48px;
+    icon-margin      : 8px;
+
+    background-image : meegotouch-videocall-camera-switch-background $CORNER_MARGINS;
+    background-color :;
+
+    press-feedback   :;
+    release-feedback :;
+}
+
+
+// ***************************************************************************
+// ** generic layout/policy without margins or spacing ***********************
+
+#ZeroLayout {
+    vertical-spacing   : 0;
+    horizontal-spacing : 0;
+
+    margin-left        : 0;
+    margin-right       : 0;
+    margin-top         : 0;
+    margin-bottom      : 0;
+}
+
+
+// ***************************************************************************
+// ** invisible widget *******************************************************
+
+#ZeroSizeWidget {
+    minimum-size   : 0 0;
+    maximum-size   : 0 0;
+    preferred-size : 0 0;
+
+    margin-left    : 0;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    padding-left   : 0;
+    padding-right  : 0;
+    padding-top    : 0;
+    padding-bottom : 0;
+
+    background-image : none;
+}
+
+
+// ***************************************************************************
+// ** icons ******************************************************************
+
+#CallUi_InfoIcon_Single {
+    margin-left    : $MARGIN_XLARGE;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    padding-left   : 0;
+    padding-right  : 0;
+    padding-top    : 0;
+    padding-bottom : 0;
+
+    minimum-size   : 32px 32px;
+    maximum-size   : 32px 32px;
+    preferred-size : 32px 32px;
+}
+
+#CallUi_InfoIcon_Left {
+    margin-left    : $MARGIN_XLARGE;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    minimum-size   : 32px 32px;
+    maximum-size   : 32px 32px;
+    preferred-size : 32px 32px;
+}
+
+#CallUi_InfoIcon_Right {
+    margin-left    : $MARGIN_LARGE;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    minimum-size   : 32px 32px;
+    maximum-size   : 32px 32px;
+    preferred-size : 32px 32px;
+}
+
+#CallUi_MinimizedCallIcon {
+    maximum-size   : 32px 32px;
+    minimum-size   : 32px 32px;
+    preferred-size : 32px 32px;
+
+    margin-left    : 0;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+}
+
+
+// ***************************************************************************
+// ** labels *****************************************************************
+
+#CallUi_BalanceLabel {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+
+    font          : $FONT_FAMILY light 1.8mm ;//18px
+    color         : #C8C8C8;
+}
+
+#CallUi_DurationLabel {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+
+    font          : $FONT_FAMILY light 2.2mm ;//22px
+    color         : #C8C8C8;
+}
+
+#CallUi_DurationLabel_Minimised {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+
+    font          : $FONT_FAMILY light 2.2mm ;//22px
+    color         : #C8C8C8;
+}
+
+#CallUi_NameLabel_In_Out {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+    maximum-size  : -1 38px;
+
+    font          : $FONT_FAMILY bold 3.2mm ;//32px
+    color         : #FFFFFF;
+}
+
+#CallUi_NameLabel_Ongoing {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+    maximum-size  : -1 38px;
+
+    font          : $FONT_FAMILY bold 3.2mm ;//32px
+    color         : #62B700;
+}
+
+#CallUi_NameLabel_Held {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+    maximum-size  : -1 38px;
+
+    font          : $FONT_FAMILY bold 3.2mm ;//32px
+    color         : #C8C8C8;
+}
+
+#CallUi_NameLabel_Ended {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+    maximum-size  : -1 38px;
+
+    font          : $FONT_FAMILY bold 3.2mm ;//32px
+    color         : #FF4036;
+}
+
+#CallUi_NameLabel_Minimised_In_Out {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+
+    font          : $FONT_FAMILY bold 2.4mm ;//24px
+    color         : #FFFFFF;
+}
+
+#CallUi_NameLabel_Minimised_Ongoing {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+
+    font          : $FONT_FAMILY bold 2.4mm ;//24px
+    color         : #62B700;
+}
+
+#CallUi_NameLabel_Minimised_Held {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+
+    font          : $FONT_FAMILY bold 2.4mm ;//24px
+    color         : #C8C8C8;
+}
+
+#CallUi_NameLabel_Minimised_Ended{
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+
+    font          : $FONT_FAMILY bold 2.4mm ;//24px
+    color         : #FF4036;
+}
+
+#CallUi_StatusLabel {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+
+    font          : $FONT_FAMILY light 1.8mm ;//18px
+    color         : #C8C8C8;
+}
+
+#CallUi_StatusLabel_Minimised {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+
+    font          : $FONT_FAMILY light 1.8mm ;//18px
+    color         : #C8C8C8;
+}
+
+#CallUi_IncomingInfoLabel {
+    margin-left   : $MARGIN_XLARGE;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    minimum-size  : 0 0;
+
+    font          : $FONT_FAMILY light 2.2mm ;//22px
+    color         : #FF4036; // warning color
+}
+
+#CallUi_CameraModeLabel {
+    margin-left    : 0;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    minimum-size   : 128px 23px;
+    preferred-size : 128px 23px;
+    maximum-size   : 128px 23px;
+
+    font           : $FONT_FAMILY light 1.8mm ;//18px
+    color          : #C8C8C8;
+}
+
+// ***************************************************************************
+// ** Call UI - custom style for all the random stuff ************************
+CustomAttributesStyle {
+
+    // CallWidget y-position in different configurations
+    call-pos-1     : 274; // From ALG: 64 +64 +63 +72 +12 (-1px correction for ALG values)
+    call-pos-2-2   :   0; // always on top of the screen
+    call-pos-3     :   0; // always on top of the screen
+    call-pos-2-3   :  64; // below $CALLWIDGET_SIZE_MINIMIZED.height (64px)
+}
+
+
+// ***************************************************************************
+// ** CallWidget *************************************************************
+
+CallWidgetStyle {
+    margin-left            : 0;
+    margin-right           : 0;
+    margin-top             : 0;
+    margin-bottom          : 0;
+
+    padding-left           : 0;
+    padding-right          : 0;
+    padding-top            : 0;
+    padding-bottom         : 0;
+
+    reactive-margin-left   : 0;
+    reactive-margin-right  : 0;
+    reactive-margin-top    : 0;
+    reactive-margin-bottom : 0;
+
+    press-feedback         :;
+    release-feedback       :;
+    cancel-feedback        :;
+
+    background-image       :;
+    background-color       :;
+
+    minimum-size           : $CALLWIDGET_SIZE;
+    maximum-size           : $CALLWIDGET_SIZE;
+    preferred-size         : $CALLWIDGET_SIZE;
+
+    // end button needs separate margins to prevent reactive area outside button graphics
+    end-button-margin-left    : 129px; // spec margin (135px) -button group padding (6px)
+    end-button-margin-right   : 50px; // spec margin
+
+    view-menu-button-margin-right : 31px; // original margin (37px) - button group padding (6px)
+
+    // some video view specific values
+    video-controls-bg-pos     : 592px 0px ; // FULL LS PAGE WIDTH (854px) -PREVIEW VIDEO WIDTH (246px) -PREVIEW VIDEO MARGINS (16px)
+    video-controls-bg-size    : 262px 444px; // PREVIEW VIDEO WIDTH (246px) -PREVIEW VIDEO MARGINS (16px), FULL PAGE HEIGHT - STATUS BAR
+    video-controls-bg-size-fs : 262px 444px; // PREVIEW VIDEO WIDTH (246px) -PREVIEW VIDEO MARGINS (16px), FULL PAGE HEIGHT - STATUS BAR
+    // TODO: use this once we are able to hide the the status bar
+    //video-controls-bg-size-fs : 262px 480px; // PREVIEW VIDEO WIDTH (246px) -PREVIEW VIDEO MARGINS (16px), FULL PAGE HEIGHT
+
+    video-controls-bg-opacity : 0.30;
+}
+
+#CallWidget_Minimized {
+    minimum-size     : $CALLWIDGET_SIZE_MINIMIZED;
+    maximum-size     : $CALLWIDGET_SIZE_MINIMIZED;
+    preferred-size   : $CALLWIDGET_SIZE_MINIMIZED;
+
+    background-image : meegotouch-callui-second-waiting-call-background;
+}
+
+#CallWidget_Video_Maximized {
+    minimum-size     : $CALLWIDGET_SIZE_VIDEO_MAXIMIZED;
+    maximum-size     : $CALLWIDGET_SIZE_VIDEO_MAXIMIZED;
+    preferred-size   : $CALLWIDGET_SIZE_VIDEO_MAXIMIZED;
+
+    margin-left      : 187px;
+}
+
+#CallWidget_Video_Minimized {
+    minimum-size     : $CALLWIDGET_SIZE_VIDEO_MINIMIZED;
+    maximum-size     : $CALLWIDGET_SIZE_VIDEO_MINIMIZED;
+    preferred-size   : $CALLWIDGET_SIZE_VIDEO_MINIMIZED;
+
+    background-image : meegotouch-callui-second-waiting-call-background;
+}
+
+#CallWidget_Video {
+    minimum-size     : $CALLWIDGET_SIZE_VIDEO;
+    maximum-size     : $CALLWIDGET_SIZE_VIDEO;
+    preferred-size   : $CALLWIDGET_SIZE_VIDEO;
+
+    background-color : #000000;
+}
+
+
+// ***************************************************************************
+// ** call bubble widget *****************************************************
+
+CallBubbleStyle {
+    margin-left            : $MARGIN_XLARGE;
+    margin-right           : $MARGIN_XLARGE;
+    margin-top             : 0;
+    margin-bottom          : 0;
+
+    padding-left           : 0;
+    padding-right          : 0;
+    padding-top            : 10px; // FIXME!
+    padding-bottom         : 18px; // FIXME!
+
+    reactive-margin-left   : 0;
+    reactive-margin-right  : 0;
+    reactive-margin-top    : 0;
+    reactive-margin-bottom : 0;
+
+    press-feedback         :;
+    release-feedback       :;
+    cancel-feedback        :;
+
+    minimum-size           : 448px 72px; // $PAGE_WIDTH (480px) - 2 * $MARGIN_XLARGE (2*16px)
+    maximum-size           : 448px 72px; // $PAGE_WIDTH (480px) - 2 * $MARGIN_XLARGE (2*16px)
+    preferred-size         : 448px 72px; // $PAGE_WIDTH (480px) - 2 * $MARGIN_XLARGE (2*16px)
+
+    background-image       : meegotouch-callui-bubble-background $CORNER_MARGINS;
+    background-color       :;
+
+
+    // ** CallBubble specific items **
+
+    bubble-pos: 0px 190px; // 64 +64 +63 (-1px correction for ALG values)
+
+    // animation update interval (fps)
+    animation-fps: 15;
+
+    // appear animation duration
+    appear-time: 750; // ms
+
+    // disappear animation duration
+    disappear-time: 250; //ms
+
+    // bubble hide delay
+    hide-delay: 5000; // ms
+
+    // service icon size (see #CallBubbleIcon)
+    icon-size: 32px 32px;
+}
+
+#CallBubbleText {
+    margin-left   : 14px;
+    margin-right  : 14px;
+    margin-top    : 0;
+    margin-bottom : 0;
+
+    font          : $FONT_FAMILY light uppercase 1.6mm;
+    color         : #FFFFFF;
+}
+
+#CallBubbleIcon {
+    margin-left    : 0;
+    margin-right   : 14px;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    padding-left   : 0;
+    padding-right  : 0;
+    padding-top    : 0;
+    padding-bottom : 0;
+
+    minimum-size   : 32px 32px;
+    maximum-size   : 32px 32px;
+    preferred-size : 32px 32px;
+}
+
+#CommonItemDividerInverted {
+    margin-top     : $MARGIN_LARGE;
+}
+
+// ** Speaker Dialog ********************************************************
+
+#SpeakerDialogButton {
+    font           : $FONT_FAMILY light 2.0mm ; //20px
+    text-color     : #ffffff;
+
+    vertical-text-align   : vcenter;
+    horizontal-text-align : hcenter;
+
+    icon-size             : 64px 64px;
+    icon-align            : center;
+
+    background-color      :;
+    background-image      :;
+
+    margin-left           : 16px;
+    margin-right          : 16px;
+    margin-top            : 47px;
+    margin-bottom         : 35px;
+
+    minimum-size          : -1 112px;
+    preferred-size        : -1 112px;
+    maximum-size          : -1 112px;
+
+    press-feedback        :;
+    release-feedback      :;
+    cancel-feedback       :;
+}
+
+#SpeakerDialogButton:selected {
+    font           : $FONT_FAMILY light 2.0mm ; //20px
+    text-color     : #0F9900;
+
+    vertical-text-align   : vcenter;
+    horizontal-text-align : hcenter;
+
+    icon-size             : 64px 64px;
+    icon-align            : center;
+
+    background-color      :;
+    background-image      :;
+
+    margin-left           : 16px;
+    margin-right          : 16px;
+    margin-top            : 47px;
+    margin-bottom         : 35px;
+
+    minimum-size          : -1 112px;
+    preferred-size        : -1 112px;
+    maximum-size          : -1 112px;
+
+    press-feedback        :;
+    release-feedback      :;
+    cancel-feedback       :;
+}
+
+// ** Service Provider Dialog ***********************************************
+#CallUiServiceProviderCharacterCounter
+{
+    margin-left : 24px;
+    margin-right: 24px;
+}
+
+
+// ** screen lock widget *****************************************************
+
+ScreenLockEventStyle {
+    title-font         : $FONT_FAMILY bold 4.8mm ;//48px
+    title-color        : $COLOR_INVERTED_FOREGROUND;
+
+    sub-title-font     : $FONT_FAMILY light 2.6mm ;//26px
+    sub-title-color    : $COLOR_INVERTED_FOREGROUND;
+
+    text-area-color    : "#64AF2D";
+
+    forward-icon       : icon-m-telephony-call-diverted 32 32;
+    service-icon-size  : 32 32;
+
+    minimum-size       : $PAGE_WIDTH 130;
+    preferred-size     : $PAGE_WIDTH 130;
+    maximum-size       : $PAGE_WIDTH 190;
+
+    background-color   : #000000;
+    background-opacity : 0.8;
+
+    // left margin 16px
+    right-margin       : 16;
+
+    title-line-1-pos   : 16   60;
+    title-line-2-pos   : 16  120;
+
+    sub-title-pos      : 16  168;
+
+    icon-pos-1        : 432 136; // left_pos = page_width(480) -right_margin(16) -icon_size(32)
+    icon-pos-2        : 395 136; // left_pos = service_icon_pos -icon_spacer(5) -icon_size(32)
+}
+
+// * Participant Dialog *******************************************************
+
+#CallUiParticipantIconButton {
+    minimum-size   : $SIZE_BUTTON $SIZE_BUTTON;
+    preferred-size : $SIZE_BUTTON $SIZE_BUTTON;
+    maximum-size   : $SIZE_BUTTON $SIZE_BUTTON;
+
+    margin-left    : $MARGIN_DEFAULT;
+    margin-top     : $MARGIN_LARGE;
+    margin-right   : $INDENT_DEFAULT;
+    margin-bottom  : $MARGIN_LARGE;
+
+    icon-size      : $SIZE_ICON_XLARGE $SIZE_ICON_XLARGE;
+}
+
+
+// ** End of File ************************************************************

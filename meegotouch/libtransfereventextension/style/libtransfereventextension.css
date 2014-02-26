@@ -1,0 +1,16 @@
+
+TransferEventItemStyle
+{
+    background-color : black;
+
+    item-spacing : 0;
+
+    press-timeout : 200;
+}
+
+
+TransferEventItemStyle:pressed
+{
+    background-color : #202020;
+}
+

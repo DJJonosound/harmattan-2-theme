@@ -1,0 +1,167 @@
+@const COLOR_ACCENT1: $COLOR_ACCENT17;
+@const TITLE_DOUBLE: 51px;
+
+#listWithSeparators {
+    horizontal-separator-object-name: "CommonItemDivider";
+    vertical-separator-object-name: "";
+}
+
+#CommonHeaderPanel {
+    background-image: color17-meegotouch-view-header-fixed $CORNER_MARGINS;
+}
+
+#CommonHeaderPanel:Pressed {
+    background-image: color17-meegotouch-view-header-fixed-pressed $CORNER_MARGINS;
+}
+
+#CommonInboxUnreadPanel {
+    background-image: color17-meegotouch-unread-inbox-panel-background 17px 17px 17px 17px;
+    margin-bottom: 0;
+}
+
+#CommonInboxUnreadPanel:pressed {
+    background-image: color17-meegotouch-unread-inbox-panel-background-pressed 17px 17px 17px 17px;
+}
+
+#CommonInboxUnreadPanel:selected {
+   background-image: color17-meegotouch-unread-inbox-panel-background-selected 17px 17px 17px 17px;
+}
+
+#CommonSheetHeaderButtonAccent {
+    background-image: color17-meegotouch-sheet-button-accent-background 20px 20px 20px 20px;
+}
+
+#CommonSheetHeaderButtonAccent:pressed {
+    background-image: color17-meegotouch-sheet-button-accent-background-pressed 20px 20px 20px 20px;
+}
+
+#CommonSheetHeaderButtonAccent:disabled {
+    background-image: color17-meegotouch-sheet-button-accent-background-disabled 20px 20px 20px 20px;
+}
+
+/* For the search text edit */
+#CommonSingleInputField:selected  {
+    background-image: color17-meegotouch-textedit-inverted-background-selected $CORNER_MARGINS;
+}
+
+/* For edit box in sheet components in app */
+#CommonSingleInputFieldLabeled:selected  {
+    background-image: color17-meegotouch-textedit-inverted-background-selected $CORNER_MARGINS;
+}
+
+#CommonRightSwitch {
+     slider-image-selected: "color17-meegotouch-switch-on-inverted" 32px 32px 20px 20px;
+}
+
+#CommonProgressBar  {
+    known-bar-texture: "color17-meegotouch-progressindicator-bar-known-texture";
+    unknown-bar-texture: "color17-meegotouch-progressindicator-bar-unknown-texture";
+}
+
+/* Overrides for open web page button */
+#CommonSingleButton:selected  {
+    background-image: color17-meegotouch-button-background-selected $CORNER_MARGINS;
+}
+
+#CommonSingleButton:pressed  {
+    background-image: color17-meegotouch-button-background-pressed $CORNER_MARGINS;
+}
+
+#CommonSingleButton:disabled  {
+    background-image: color17-meegotouch-button-background-disabled-selected $CORNER_MARGINS;
+}
+
+#CommonInboxReadPanel  {
+    margin-bottom: 0;
+}
+
+#CommonBodyText  {
+    highlight-color: $COLOR_ACCENT17;
+    active-highlight-color: $COLOR_ACCENT17;
+}
+
+/* This is only used in messages item where we need to show the items in Color17 */
+#CommonInboxUnreadItemInfo  {
+    color: $COLOR_ACCENT17;
+}
+
+/* Currently CommonHeader is used only in warning line in the feed view. */
+MWidgetController#ErrorWidget MLabelStyle#CommonHeader  {
+    color: $COLOR_WARNING;
+}
+
+#MessagesTitleWidget {
+    font: $FONT_FAMILY_LIGHT 32;
+    color: $COLOR_FOREGROUND;
+    margin-top:    14px;
+    margin-bottom: 14px;
+    margin-left: $INDENT_DEFAULT;
+    margin-right: $INDENT_DEFAULT;
+}
+
+/* For feed channel item, the only time a subtitle is shown is during error */
+FeedChannelItem#CommonInboxReadPanel  MLabelStyle#CommonSubTitle {
+    color: $COLOR_WARNING;
+}
+
+/* For feed channel item, the only time a subtitle is shown is during error */
+FeedChannelItem#CommonInboxUnreadPanel  MLabelStyle#CommonSubTitle {
+    color: $COLOR_WARNING;
+}
+
+/* WE need to explicitly specify margin for channel item cause we have sigle label in a grid view */
+FeedChannelItem#CommonInboxReadPanel  MImageWidgetStyle#CommonSubIconTop {
+    margin-top: $MARGIN_SMALL;
+}
+
+/* WE need to explicitly specify margin for channel item cause we have sigle label in a grid view */
+FeedChannelItem#CommonInboxUnreadPanel  MImageWidgetStyle#CommonSubIconTop {
+    margin-top: $MARGIN_SMALL;
+}
+
+/* In the Main view, we need to make the drill down list items to align with rest of the list items*/
+MWidgetController#FeedsPannableWidget  MListItemStyle#CommonInboxReadPanel  {
+    padding-bottom: 0;
+}
+
+#FeedsThumbnail  {
+    minimum-size:      64px 64px;
+    preferred-size:    64px 64px;
+    maximum-size:      64px 64px;
+    margin-top:        8px;
+    margin-bottom:     8px;
+    margin-left:       8px;
+    margin-right:      16px;
+}
+
+#FeedsTopMargin  {
+    margin-top: $MARGIN_XLARGE;
+}
+
+#FeedsLargeSpacer  {
+    preferred-size: 1 72px;
+    minimum-size: 1 72px;
+    maximum-size: 1 72px;
+}
+
+#FeedFirstStart.Landscape  {
+    background-image: "meegotouch-accounts-landscape-background" 15px 15px 15px 15px;
+}
+
+#FeedFirstStart.Portrait  {
+    background-image: "meegotouch-accounts-portrait-background" 15px 15px 15px 15px;
+}
+
+#CommonLargeCountBubble  {
+    background-image: "color17-meegotouch-countbubble-background-large" 16px 16px 0 0;
+}
+
+MWidgetController#MassStorageWidget MLabelStyle#CommonEmptyStateTitle {
+    color: $COLOR_ACCENT17;
+    margin-left: $MARGIN_XLARGE;
+    margin-right: $MARGIN_XLARGE;
+}
+
+#MassStorageModeScreen  {
+    background-color: #000000;
+}

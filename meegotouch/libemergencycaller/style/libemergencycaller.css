@@ -1,0 +1,228 @@
+@import "numpad.css";
+
+EmergencyCallPage MWidgetStyle#emergencyCallPage {
+    background-image: meegotouch-pin-background;
+}
+
+// ----------------------------------------------------------------------------
+// Input widget background
+// ----------------------------------------------------------------------------
+
+InputWidgetStyle {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    minimum-size: -1 244px;
+    maximum-size: -1 244px;
+    preferred-size: -1 244px;
+
+    background-tiles:;
+    background-boxed-percent: 0;
+
+    background-color:;
+//    background-image: color2-meegotouch-view-header-fixed $CORNER_MARGINS;
+    background-image: meegotouch-pin-input-background $CORNER_MARGINS;
+    background-opacity: 1.0;
+}
+
+InputWidgetStyle:warning {
+    background-color:;
+    background-tiles:;
+    background-image: meegotouch-pin-input-error-background $CORNER_MARGINS;
+}
+
+InputWidgetStyle:emergency {
+    background-color:;
+    background-tiles:;
+    background-image: meegotouch-view-header-interactive $CORNER_MARGINS;
+}
+
+// ----------------------------------------------------------------------------
+// Input widget labels
+// ----------------------------------------------------------------------------
+
+InputWidget MLabelStyle[inputWidgetTitleLabel] {
+    margin-left: $INDENT_DEFAULT;
+    margin-right: $INDENT_DEFAULT;
+    margin-top: 18px;
+    margin-bottom: 0;
+    font: $FONT_FAMILY 26px;
+    color: $COLOR_INVERTED_FOREGROUND;
+    minimum-size: -1 29px;
+    preferred-size: -1 29px;
+    maximum-size: 448px 29px;
+}
+
+InputWidget MLabelStyle[inputWidgetTitleLabelEmg] {
+    margin-left: $INDENT_DEFAULT;
+    margin-right: $INDENT_DEFAULT;
+    margin-top: 18px;
+    margin-bottom: 0;
+    font: $FONT_FAMILY 26px;
+    color: #E60000;
+    minimum-size: -1 29px;
+    preferred-size: -1 29px;
+    maximum-size: 448px 29px;
+}
+
+InputWidget MLabelStyle[inputWidgetHintLabel] {
+    margin-left: $INDENT_DEFAULT;
+    margin-right: $INDENT_DEFAULT;
+    margin-top: $MARGIN_MEDIUM;
+    margin-bottom: 0;
+    font: $FONT_FAMILY 20px;
+    color: $COLOR_INVERTED_FOREGROUND;
+    minimum-size: -1 23px;
+    preferred-size: -1 23px;
+    maximum-size: 448px 23px;
+}
+
+InputWidget MLabelStyle[inputWidgetHintLabelEmg] {
+    margin-left: $INDENT_DEFAULT;
+    margin-right: $INDENT_DEFAULT;
+    margin-top: $MARGIN_MEDIUM;
+    margin-bottom: 0;
+    font: $FONT_FAMILY 20px;
+    color: #E60000;
+    minimum-size: -1 23px;
+    preferred-size: -1 23px;
+    maximum-size: 448px 23px;
+}
+
+// ----------------------------------------------------------------------------
+// Input widget backspace button
+// ----------------------------------------------------------------------------
+
+InputWidget MButtonIconStyle#inputWidgetBackspace {
+    icon-size: $SIZE_ICON_LARGE $SIZE_ICON_LARGE;
+    minimum-size: 4.8mm 4.8mm;
+    maximum-size: 4.8mm 4.8mm;
+    preferred-size: 4.8mm 4.8mm;
+    margin-top: 0.0mm;
+    margin-bottom: 0.0mm;
+    margin-left: 0.0mm;
+    margin-right: $INDENT_DEFAULT;
+    icon-id: "icon-m-common-backspace";
+    background-image:;
+    background-color:;
+    press-feedback: priority2_static_press;
+    release-feedback: priority2_static_release;
+}
+
+InputWidget MButtonIconStyle#inputWidgetBackspaceEmg {
+    icon-size: $SIZE_ICON_LARGE $SIZE_ICON_LARGE;
+    minimum-size: 4.8mm 4.8mm;
+    maximum-size: 4.8mm 4.8mm;
+    preferred-size: 4.8mm 4.8mm;
+    margin-top: 0.0mm;
+    margin-bottom: 0.0mm;
+    margin-left: 0.0mm;
+    margin-right: $INDENT_DEFAULT;
+    icon-id: "icon-m-emergency-call-backspace";
+    background-image:;
+    background-color:;
+    press-feedback: priority2_static_press;
+    release-feedback: priority2_static_release;
+}
+
+// ----------------------------------------------------------------------------
+// Input widget edit field
+// ----------------------------------------------------------------------------
+
+InputTextEditStyle
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-top: 0px;
+    margin-left: 64px;
+
+    background-image:;
+    disable-magnifier: true;
+
+    text-opacity: 1.0;
+    aged-text-opacity: 0.5;
+
+    max-characters-per-line: 12;
+    max-visible-lines: 2;
+    font: $FONT_FAMILY light 100px;
+    text-color: $COLOR_INVERTED_FOREGROUND;
+    font-min-scale: 0.56;
+    letter-spacing: 85.0;
+
+    mask-string: ""; // empty string will be set to bullet "•"
+
+    minimum-size: -1 144px;
+    maximum-size: -1 144px;
+    preferred-size: -1 144px;
+}
+InputTextEditStyle:selected
+{
+    background-image:;
+}
+
+InputWidget InputTextEditStyle#inputEditField {
+    font: $FONT_FAMILY light 100px;
+    text-color: $COLOR_INVERTED_FOREGROUND;
+    cursor-width: 0;
+    mask-string: ""; // empty string will be set to bullet "•"
+    margin-top: 0;
+    margin-left: 64px;
+    disable-magnifier: true;
+
+    minimum-size: -1 144px;
+    maximum-size: -1 144px;
+    preferred-size: -1 144px;
+}
+
+InputWidget InputTextEditStyle#inputEditFieldEmg {
+    font: $FONT_FAMILY light 100px;
+    text-color: #E60000;
+    cursor-width: 0;
+    mask-string: ""; // empty string will be set to bullet "•"
+    margin-top: 0;
+    margin-left: 64px;
+    disable-magnifier: true;
+
+    minimum-size: -1 144px;
+    maximum-size: -1 144px;
+    preferred-size: -1 144px;
+}
+
+// ----------------------------------------------------------------------------
+// Dial button
+// ----------------------------------------------------------------------------
+
+MApplicationPage MButtonStyle#CommonLeftButtonPositive {
+    press-feedback: priority2_static_press;
+    release-feedback: priority2_static_release;
+}
+
+// ----------------------------------------------------------------------------
+// Layout spacers
+// ----------------------------------------------------------------------------
+
+MApplicationPage MWidgetStyle#celluiMiddleSpacer {
+    preferred-size: -1 38px;
+    minimum-size: -1 38px;
+    maximum-size: -1 38px;
+    background-image:;
+    background-color:;
+}
+
+MApplicationPage MWidgetStyle#celluiBottomSpacer {
+    preferred-size: -1 70px;
+    minimum-size: -1 8px;
+    maximum-size: -1 70px;
+    background-image:;
+    background-color:;
+}

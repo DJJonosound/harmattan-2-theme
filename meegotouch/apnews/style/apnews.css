@@ -1,0 +1,11 @@
+StoryItem MLabelStyle#CommonTitle {
+/* Any overrides to CommonLargeHeaderInverted would come in here. */
+/*background-color: red;*/
+
+preferred-size: 100% 100%;
+minimum-size:   0 0;
+maximum-size:   100% 100%;
+
+margin-top:    0;
+margin-bottom: 0;
+}

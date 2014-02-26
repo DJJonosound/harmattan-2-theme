@@ -1,0 +1,268 @@
+@const ALBUMART_SIZE: 48mm 48mm;
+@const COLOR_INFOLABEL: #bbbbbb;
+@const NOW_PLAYING_WIDGET_SIZE: 48mm 13.3mm;
+@const PLAY_QUEUE_SIZE: 48mm 61.3mm;
+
+MImageWidgetStyle#AlbumArtWidget {
+    minimum-size: $ALBUMART_SIZE;
+    maximum-size: $ALBUMART_SIZE;
+    preferred-size: $ALBUMART_SIZE;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#NowPlayingWidget {
+    minimum-size: 48mm 0;
+    maximum-size: $NOW_PLAYING_WIDGET_SIZE;
+    preferred-size: $NOW_PLAYING_WIDGET_SIZE;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    padding-left: $MARGIN_XLARGE;
+    padding-top: $MARGIN_XLARGE;
+    padding-right: $MARGIN_XLARGE;
+    padding-bottom: 0;
+}
+
+#InfoPaneTop {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: $MARGIN_XXLARGE;
+}
+
+#InfoPaneBottom {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: $MARGIN_XXLARGE;
+}
+
+#SongTitleLabel {
+    font: $FONT_FAMILY bold 22;
+    color: $COLOR_INVERTED_FOREGROUND;
+
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: $INDENT_DEFAULT;
+}
+
+#SongNumberLabel {
+    font: $FONT_FAMILY light 22;
+    color: $COLOR_INFOLABEL;
+
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+#ArtistLabel {
+    font: $FONT_FAMILY light 22;
+    color: $COLOR_INFOLABEL;
+
+    margin-bottom: $MARGIN_SMALL;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+#AlbumLabel {
+    font: $FONT_FAMILY light 22;
+    color: $COLOR_INFOLABEL;
+
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+#ReleaseAndGenreLabel {
+    font: $FONT_FAMILY light 22;
+    color: $COLOR_INFOLABEL;
+
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+#InfoIcon {
+    minimum-size: $SIZE_ICON_DEFAULT $SIZE_ICON_DEFAULT;
+    maximum-size: $SIZE_ICON_DEFAULT $SIZE_ICON_DEFAULT;
+    preferred-size: $SIZE_ICON_DEFAULT $SIZE_ICON_DEFAULT;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#PlayerControlsButtonPane {
+    margin-top: $MARGIN_LARGE;
+    margin-bottom: $MARGIN_LARGE;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#PlayerControlsButton {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: $MARGIN_MEDIUM;
+    margin-right: $MARGIN_MEDIUM;
+
+    icon-size: 40px 40px;
+}
+
+#PlayerControlsTimeLabel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: $MARGIN_XXLARGE;
+    margin-right: $MARGIN_XXLARGE;
+
+    font: $FONT_FAMILY light 22;
+    color: $COLOR_INFOLABEL;
+    minimum-size: 180px -1;
+}
+
+#PlayerControlsProgressTextLabel {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: $MARGIN_XXLARGE;
+    margin-right: $MARGIN_XXLARGE;
+
+    font: $FONT_FAMILY light 22;
+    color: $COLOR_INFOLABEL;
+    minimum-size: 420px -1;
+}
+
+#SeekPane {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#CommonSeekerInverted {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    minimum-size: 100% -1;
+    preferred-size: 100% -1;
+    maximum-size: 100% -1;
+    background-elapsed-image: "color12-meegotouch-slider-elapsed-inverted-background-horizontal" 4px 4px 4px 4px;
+}
+
+#CommonProgressBarInverted {
+    margin-top: 2.8mm;
+    margin-bottom: 2.8mm;
+    margin-left: $PADDING_XXLARGE;
+    margin-right: $PADDING_XXLARGE;
+    minimum-size: 430px 10px;
+    preferred-size: 430px 10px;
+    maximum-size: 430px 10px;
+    unknown-bar-texture: "color12-meegotouch-progressindicator-inverted-bar-unknown-texture";
+    known-bar-texture: "color12-meegotouch-progressindicator-inverted-bar-known-texture";
+}
+
+MApplicationMenu MListItemStyle.Portrait {
+    minimum-size: -1 7.0mm;
+    preferred-size: -1 7.0mm;
+    maximum-size: -1 7.0mm;
+}
+
+#ViewMenuPlayAlbumItem {
+    background-tiles: ;
+    background-color: ;
+}
+
+MBasicListItem#ViewMenuPlayAlbumItem MLabelStyle#CommonTitle {
+    margin-top: $MARGIN_LARGE;
+    margin-left: $MARGIN_XXLARGE;
+    color: #FFFFFF;
+}
+
+MBasicListItem#ViewMenuPlayAlbumItem MLabelStyle#CommonSubTitle {
+    margin-left: $MARGIN_XXLARGE;
+    color: #FFFFFF;
+}
+
+#PlayerViewBottomSpacer {
+    margin-top: 0;
+    margin-bottom: 0;
+    minimum-size: -1 40px;
+    preferred-size: -1 40px;
+    maximum-size: -1 40px;
+}
+
+#SheetPlayerSeekPane {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#SheetPlayerControlsButtonPane {
+    margin-top: $MARGIN_LARGE;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#NowPlayingSheetWidget {
+    minimum-size: 48mm 0;
+    maximum-size: 48mm 100%;
+    preferred-size: $NOW_PLAYING_WIDGET_SIZE;
+
+    margin-left: 0;
+    margin-top: $MARGIN_XLARGE;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    padding-left: $MARGIN_XLARGE;
+    padding-top: 0;
+    padding-right: $MARGIN_XLARGE;
+    padding-bottom: 0;
+}
+
+#SheetPlayerInfoPaneTop {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: $MARGIN_XLARGE;
+}
+
+#SheetPlayerInfoPaneBottom {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+NowPlayingWidgetStyle {
+    background-color: #000000;
+}
+
+PlayerControlsWidgetStyle {
+    background-color: #000000;
+}
+
+PlayerInfoAreaStyle {
+    minimum-size: $PLAY_QUEUE_SIZE;
+    maximum-size: $PLAY_QUEUE_SIZE;
+    preferred-size: $PLAY_QUEUE_SIZE;
+}
+
+PlayQueueTitleItem MButtonStyle#CommonHeaderButtonInverted {
+    minimum-size: 48px 48px;
+    maximum-size: 48px 48px;
+    preferred-size: 48px 48px;
+}

@@ -1,0 +1,99 @@
+RelatedGridItemWidget MImageWidgetStyle#YouTubeGridCellThumbnail {
+    margin-left:   0;
+    margin-right:  $MARGIN_XLARGE;
+    margin-bottom: $MARGIN_XLARGE;
+    margin-top:    0;
+    padding-top:   0;
+    padding-right: 0;
+    padding-bottom:0;
+}
+
+RelatedGridItemWidget MImageWidgetStyle#YouTubeGridCellThumbnail.Landscape {
+    minimum-size:   19.4mm 10.9mm;
+    preferred-size: 19.4mm 10.9mm;
+    maximum-size:   19.4mm 10.9mm;
+}
+
+RelatedGridItemWidget MImageWidgetStyle#YouTubeGridCellThumbnail.Portrait {
+    minimum-size:   21.6mm 12.2mm;
+    preferred-size: 21.6mm 12.2mm;
+    maximum-size:   21.6mm 12.2mm;
+}
+
+RelatedGridItemWidget MLabelStyle#YouTubeGridCellTitleLabel {
+    margin-top:    0;
+    margin-bottom: 0;
+    margin-left:   0;
+    margin-right:  0;
+
+    padding-left: $MARGIN_DOUBLE;
+    padding-top: 0;
+    padding-right: $MARGIN_DOUBLE;
+    padding-bottom: 0;
+
+    font: $FONT_XSMALL;
+    color: #ffffff;
+    background-color: #000000;
+    background-opacity: 0.75;
+}
+
+RelatedGridItemWidget MLabelStyle#YouTubeGridCellTitleLabel.Landscape {
+    minimum-size:   19.4mm 2.8mm;
+    preferred-size: 19.4mm 2.8mm;
+    maximum-size:   19.4mm 2.8mm;
+}
+
+RelatedGridItemWidget MLabelStyle#YouTubeGridCellTitleLabel.Portrait {
+    minimum-size:   21.6mm 2.8mm;
+    preferred-size: 21.6mm 2.8mm;
+    maximum-size:   21.6mm 2.8mm;
+}
+
+RelatedGridItemWidget MLabelStyle#YouTubeGridCellTitleLabelPressed {
+    margin-top:    0;
+    margin-bottom: 0;
+    margin-left:   0;
+    margin-right:  0;
+
+    padding-left: $MARGIN_DOUBLE;
+    padding-top: 0;
+    padding-right: $MARGIN_DOUBLE;
+    padding-bottom: 0;
+
+    font: $FONT_XSMALL;
+    color: #ffffff;
+
+    background-color: $COLOR_SECONDARY_FOREGROUND;
+    background-opacity: 0.75;
+}
+
+RelatedGridItemWidget MLabelStyle#YouTubeGridCellTitleLabelPressed.Landscape {
+    minimum-size:   19.4mm 2.8mm;
+    preferred-size: 19.4mm 2.8mm;
+    maximum-size:   19.4mm 2.8mm;
+}
+
+RelatedGridItemWidget MLabelStyle#YouTubeGridCellTitleLabelPressed.Portrait {
+    minimum-size:   21.6mm 2.8mm;
+    preferred-size: 21.6mm 2.8mm;
+    maximum-size:   21.6mm 2.8mm;
+}
+
+RelatedVideosWidget MLabelStyle#YoutubeRelatedErrorLabel.Landscape {
+    minimum-size:   85.4mm -1;
+    preferred-size: 85.4mm -1;
+    maximum-size:   85.4mm -1;
+
+    font: $FONT_DEFAULT;
+    color: #ffffff;
+}
+
+RelatedVideosWidget MLabelStyle#YoutubeRelatedErrorLabel.Portrait {
+    minimum-size:   48mm -1;
+    preferred-size: 48mm -1;
+    maximum-size:   48mm -1;
+
+    font: $FONT_DEFAULT;
+    color: #ffffff;
+}
+

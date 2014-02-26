@@ -1,0 +1,12 @@
+
+/* default style attribute values for common components */
+/* widget styles are imported in alphabetical order */
+
+@import "mbuttonstyle.css";
+@import "mcompleterstyle.css";
+@import "mdockwidgetstyle.css";
+@import "mhomebuttonpanelstyle.css";
+@import "mnavigationbarstyle.css";
+@import "mtoolbarstyle.css";
+@import "mtoolbartabstyle.css";
+@import "mtexteditstyle.css";

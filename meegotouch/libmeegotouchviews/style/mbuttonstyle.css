@@ -1,0 +1,8 @@
+@const CB_WIDTH:    32.2mm;
+@const CB_HEIGHT:   5.1mm;
+
+MButtonStyle {
+        minimum-size:    $CB_HEIGHT $CB_HEIGHT;
+        preferred-size:  $CB_WIDTH $CB_HEIGHT;
+        maximum-size:    $CB_WIDTH $CB_HEIGHT;
+}

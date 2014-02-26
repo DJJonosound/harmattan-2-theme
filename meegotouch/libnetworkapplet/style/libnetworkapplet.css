@@ -1,0 +1,15 @@
+/* devel */
+
+DrillDownListItem MImageWidgetStyle#CommonDrilldownIconInverted
+{
+    margin-left : $MARGIN_DOUBLE;
+    margin-right : $MARGIN_DOUBLE;
+    margin-top : $MARGIN_DOUBLE;
+    margin-bottom : $MARGIN_DOUBLE;
+}
+
+/* Used in operator list scan spinner*/
+MWidgetController MSpinnerStyle#CommonLargeSpinnerInverted {
+    margin-top : $INDENT_DEFAULT;
+}
+

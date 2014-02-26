@@ -1,0 +1,786 @@
+<emoticon_theme theme_uuid="2b8a0922-d6c5-420e-a145-9c7a508ddc2b" service_uuid="skype" theme_name="Skype">
+
+  <emoticon preview="true">
+    <charactercode default="true">:)</charactercode>
+    <charactercode default="false">:-)</charactercode>
+    <charactercode default="false">:=)</charactercode>
+    <charactercode default="false">(smile)</charactercode>
+
+    <file size="m">smile_32.png</file>
+    <file size="s">smile_20.png</file>
+
+    <positionindex>0</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:(</charactercode>
+    <charactercode default="false">:-(</charactercode>
+    <charactercode default="false">:=(</charactercode>
+    <charactercode default="false">(sad)</charactercode>
+
+    <file size="m">sadsmile_32.png</file>
+    <file size="s">sadsmile_20.png</file>
+
+    <positionindex>1</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:D</charactercode>
+    <charactercode default="false">:-D</charactercode>
+    <charactercode default="false">:=D</charactercode>
+    <charactercode default="false">:d</charactercode>
+    <charactercode default="false">:-d</charactercode>
+    <charactercode default="false">:=d</charactercode>
+    <charactercode default="false">(laugh)</charactercode>
+
+    <file size="m">bigsmile_32.png</file>
+    <file size="s">bigsmile_20.png</file>
+
+    <positionindex>2</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">8-)</charactercode>
+    <charactercode default="false">8=)</charactercode>
+    <charactercode default="false">B-)</charactercode>
+    <charactercode default="false">B=)</charactercode>
+    <charactercode default="false">(cool)</charactercode>
+
+    <file size="m">cool_32.png</file>
+    <file size="s">cool_20.png</file>
+
+    <positionindex>3</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:O</charactercode>
+    <charactercode default="false">:-O</charactercode>
+    <charactercode default="false">:=O</charactercode>
+    <charactercode default="false">:o</charactercode>
+    <charactercode default="false">:-o</charactercode>
+    <charactercode default="false">:=o</charactercode>
+    <charactercode default="false">(surprised)</charactercode>
+
+    <file size="m">surprised_32.png</file>
+    <file size="s">surprised_20.png</file>
+
+    <positionindex>4</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">;)</charactercode>
+    <charactercode default="false">;-)</charactercode>
+    <charactercode default="false">;=)</charactercode>
+    <charactercode default="false">(wink)</charactercode>
+
+    <file size="m">wink_32.png</file>
+    <file size="s">wink_20.png</file>
+
+    <positionindex>5</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">;(</charactercode>
+    <charactercode default="false">;-(</charactercode>
+    <charactercode default="false">;=(</charactercode>
+    <charactercode default="false">(cry)</charactercode>
+
+    <file size="m">crying_32.png</file>
+    <file size="s">crying_20.png</file>
+
+    <positionindex>6</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">(:|</charactercode>
+    <charactercode default="false">(sweat)</charactercode>
+
+    <file size="m">sweating_32.png</file>
+    <file size="s">sweating_20.png</file>
+
+    <positionindex>7</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:|</charactercode>
+    <charactercode default="false">:-|</charactercode>
+    <charactercode default="false">:=|</charactercode>
+    <charactercode default="false">(speechless)</charactercode>
+
+    <file size="m">speechless_32.png</file>
+    <file size="s">speechless_20.png</file>
+
+    <positionindex>8</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:*</charactercode>
+    <charactercode default="false">:-*</charactercode>
+    <charactercode default="false">:=*</charactercode>
+    <charactercode default="false">(kiss)</charactercode>
+
+    <file size="m">kiss_32.png</file>
+    <file size="s">kiss_20.png</file>
+
+    <positionindex>9</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:P</charactercode>
+    <charactercode default="false">:-P</charactercode>
+    <charactercode default="false">:=P</charactercode>
+    <charactercode default="false">:p</charactercode>
+    <charactercode default="false">:-p</charactercode>
+    <charactercode default="false">:=p</charactercode>
+    <charactercode default="false">(tongueout)</charactercode>
+
+    <file size="m">tongueout_32.png</file>
+    <file size="s">tongueout_20.png</file>
+
+    <positionindex>10</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:$</charactercode>
+    <charactercode default="false">:-$</charactercode>
+    <charactercode default="false">:=$</charactercode>
+    <charactercode default="false">:"&gt;</charactercode>
+    <charactercode default="false">(blush)</charactercode>
+
+    <file size="m">blushing_32.png</file>
+    <file size="s">blushing_20.png</file>
+
+    <positionindex>11</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:^)</charactercode>
+    <charactercode default="false">(wonder)</charactercode>
+
+    <file size="m">wondering_32.png</file>
+    <file size="s">wondering_20.png</file>
+
+    <positionindex>12</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">|-)</charactercode>
+    <charactercode default="false">I-)</charactercode>
+    <charactercode default="false">I=)</charactercode>
+    <charactercode default="false">(snooze)</charactercode>
+
+    <file size="m">sleepy_32.png</file>
+    <file size="s">sleepy_20.png</file>
+
+    <positionindex>13</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">|-(</charactercode>
+    <charactercode default="false">|(</charactercode>
+    <charactercode default="false">|=(</charactercode>
+    <charactercode default="false">(dull)</charactercode>
+
+    <file size="m">dull_32.png</file>
+    <file size="s">dull_20.png</file>
+
+    <positionindex>14</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="false">(inlove)</charactercode>
+    <charactercode default="false">(love)</charactercode>
+
+    <file size="m">inlove_32.png</file>
+    <file size="s">inlove_20.png</file>
+
+    <positionindex>15</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">]:)</charactercode>
+    <charactercode default="false">&gt;:)</charactercode>
+    <charactercode default="false">(grin)</charactercode>
+
+    <file size="m">evilgrin_32.png</file>
+    <file size="s">evilgrin_20.png</file>
+
+    <positionindex>16</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">(yn)</charactercode>
+    <charactercode default="false">(fingers)</charactercode>
+    <charactercode default="false">(fingerscrossed)</charactercode>
+    <charactercode default="false">(crossedfingers)</charactercode>
+
+    <file size="m">fingerscrossed_32.png</file>
+    <file size="s">fingerscrossed_20.png</file>
+
+    <positionindex>17</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">(yawn)</charactercode>
+
+    <file size="m">yawning_32.png</file>
+    <file size="s">yawning_20.png</file>
+
+    <positionindex>18</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">(puke)</charactercode>
+    <charactercode default="false">:&amp;</charactercode>
+    <charactercode default="false">:-&amp;</charactercode>
+    <charactercode default="false">:=&amp;</charactercode>
+
+    <file size="m">puking_32.png</file>
+    <file size="s">puking_20.png</file>
+
+    <positionindex>19</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+    <charactercode default="true">(doh)</charactercode>
+
+    <file size="m">doh_32.png</file>
+    <file size="s">doh_20.png</file>
+
+    <positionindex>20</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+    <charactercode default="true">(angry)</charactercode>
+    <charactercode default="false">:@</charactercode>
+    <charactercode default="false">:-@</charactercode>
+    <charactercode default="false">:=@</charactercode>    
+    <charactercode default="false">x(</charactercode>
+    <charactercode default="false">x-(</charactercode>
+    <charactercode default="false">X(</charactercode>
+    <charactercode default="false">X-(</charactercode>
+    <charactercode default="false">x=(</charactercode>
+    <charactercode default="false">X=(</charactercode>
+                        
+    <file size="m">angry_32.png</file>
+    <file size="s">angry_20.png</file>
+
+    <positionindex>21</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+    <charactercode default="true">(wasntme)</charactercode>
+
+    <file size="m">itwasntme_32.png</file>
+    <file size="s">itwasntme_20.png</file>
+
+    <positionindex>22</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+    <charactercode default="true">(party)</charactercode>
+
+    <file size="m">party_32.png</file>
+    <file size="s">party_20.png</file>
+
+    <positionindex>23</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+    <charactercode default="true">(worry)</charactercode>
+    <charactercode default="false">:S</charactercode>
+    <charactercode default="false">:s</charactercode>
+    <charactercode default="false">:-s</charactercode>
+    <charactercode default="false">:-S</charactercode>
+    <charactercode default="false">:=s</charactercode>
+    <charactercode default="false">:=S</charactercode>
+
+    <file size="m">worried_32.png</file>
+    <file size="s">worried_20.png</file>
+
+    <positionindex>24</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+    <charactercode default="true">(mm)</charactercode>
+    <charactercode default="false">(mmm)</charactercode>
+    <charactercode default="false">(mmmm)</charactercode>
+
+    <file size="m">mmm_32.png</file>
+    <file size="s">mmm_20.png</file>
+
+    <positionindex>25</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+    <charactercode default="true">(nerd)</charactercode>
+    <charactercode default="false">8-|</charactercode>
+    <charactercode default="false">B-|</charactercode>
+    <charactercode default="false">8|</charactercode>
+    <charactercode default="false">B|</charactercode>
+    <charactercode default="false">8=|</charactercode>
+    <charactercode default="false">B=|</charactercode>
+
+    <file size="m">nerd_32.png</file>
+    <file size="s">nerd_20.png</file>
+
+    <positionindex>26</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+    <charactercode default="true">:x</charactercode>
+    <charactercode default="false">:-x</charactercode>
+    <charactercode default="false">:X</charactercode>
+    <charactercode default="false">:-X</charactercode>
+    <charactercode default="false">:#</charactercode>
+    <charactercode default="false">:-#</charactercode>
+    <charactercode default="false">:=x</charactercode>
+    <charactercode default="false">:=X</charactercode>
+    <charactercode default="false">:=#</charactercode>
+
+    <file size="m">lipssealed_32.png</file>
+    <file size="s">lipssealed_20.png</file>
+
+    <positionindex>27</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(wave)</charactercode>
+	<charactercode default="false">(hi)</charactercode>
+	<charactercode default="false">(bye)</charactercode>
+
+    <file size="m">hi_32.png</file>
+    <file size="s">hi_20.png</file>
+
+    <positionindex>28</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(facepalm)</charactercode>
+	<charactercode default="false">(fail)</charactercode>
+
+    <file size="m">facepalm_32.png</file>
+    <file size="s">facepalm_20.png</file>
+
+    <positionindex>29</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(devil)</charactercode>
+
+    <file size="m">devil_32.png</file>
+    <file size="s">devil_20.png</file>
+
+    <positionindex>30</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(angel)</charactercode>
+
+    <file size="m">angel_32.png</file>
+    <file size="s">angel_20.png</file>
+
+    <positionindex>31</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(envy)</charactercode>
+
+    <file size="m">envy_32.png</file>
+    <file size="s">envy_20.png</file>
+
+    <positionindex>32</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(wait)</charactercode>
+
+    <file size="m">wait_32.png</file>
+    <file size="s">wait_20.png</file>
+
+    <positionindex>33</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(hug)</charactercode>
+	<charactercode default="false">(bear)</charactercode>
+
+    <file size="m">hug_32.png</file>
+    <file size="s">hug_20.png</file>
+
+    <positionindex>34</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(makeup)</charactercode>
+	<charactercode default="false">(kate)</charactercode>
+
+    <file size="m">makeup_32.png</file>
+    <file size="s">makeup_20.png</file>
+
+    <positionindex>35</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(chuckle)</charactercode>
+	<charactercode default="false">(giggle)</charactercode>
+
+    <file size="m">giggle_32.png</file>
+    <file size="s">giggle_20.png</file>
+
+    <positionindex>36</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(clap)</charactercode>
+
+    <file size="m">clapping_32.png</file>
+    <file size="s">clapping_20.png</file>
+
+    <positionindex>37</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(think)</charactercode>
+	<charactercode default="false">:-?</charactercode>
+	<charactercode default="false">:?</charactercode>
+	<charactercode default="false">:=?</charactercode>
+
+    <file size="m">thinking_32.png</file>
+    <file size="s">thinking_20.png</file>
+
+    <positionindex>38</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(bow)</charactercode>
+
+    <file size="m">bow_32.png</file>
+    <file size="s">bow_20.png</file>
+
+    <positionindex>39</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(rofl)</charactercode>
+
+    <file size="m">rofl_32.png</file>
+    <file size="s">rofl_20.png</file>
+
+    <positionindex>40</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(whew)</charactercode>
+
+    <file size="m">whew_32.png</file>
+    <file size="s">whew_20.png</file>
+
+    <positionindex>41</positionindex>
+  </emoticon>
+  
+  <emoticon preview="false">
+	<charactercode default="true">(happy)</charactercode>
+
+    <file size="m">happy_32.png</file>
+    <file size="s">happy_20.png</file>
+
+    <positionindex>42</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(smirk)</charactercode>
+
+    <file size="m">smirk_32.png</file>
+    <file size="s">smirk_20.png</file>
+
+    <positionindex>43</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(nod)</charactercode>
+
+    <file size="m">nod_32.png</file>
+    <file size="s">nod_20.png</file>
+
+    <positionindex>44</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(shake)</charactercode>
+
+    <file size="m">shake_32.png</file>
+    <file size="s">shake_20.png</file>
+
+    <positionindex>45</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(waiting)</charactercode>
+	<charactercode default="false">(forever)</charactercode>
+	<charactercode default="false">(impatience)</charactercode>
+
+    <file size="m">waiting_32.png</file>
+    <file size="s">waiting_20.png</file>
+
+    <positionindex>46</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(emo)</charactercode>
+
+    <file size="m">emo_32.png</file>
+    <file size="s">emo_20.png</file>
+
+    <positionindex>47</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(y)</charactercode>
+	<charactercode default="false">(Y)</charactercode>
+	<charactercode default="false">(ok)</charactercode>
+	<charactercode default="false">(yes)</charactercode>
+
+    <file size="m">yes_32.png</file>
+    <file size="s">yes_20.png</file>
+
+    <positionindex>48</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(n)</charactercode>
+	<charactercode default="false">(N)</charactercode>
+	<charactercode default="false">(no)</charactercode>
+
+    <file size="m">no_32.png</file>
+    <file size="s">no_20.png</file>
+
+    <positionindex>49</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(handshake)</charactercode>
+
+    <file size="m">handshake_32.png</file>
+    <file size="s">handshake_20.png</file>
+
+    <positionindex>50</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(highfive)</charactercode>
+	<charactercode default="false">(hifive)</charactercode>
+	<charactercode default="false">(h5)</charactercode>
+
+    <file size="m">highfive_32.png</file>
+    <file size="s">highfive_20.png</file>
+
+    <positionindex>51</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(h)</charactercode>
+	<charactercode default="false">(H)</charactercode>
+	<charactercode default="false">(l)</charactercode>
+	<charactercode default="false">(L)</charactercode>
+	<charactercode default="false">(heart)</charactercode>
+
+    <file size="m">heart_32.png</file>
+    <file size="s">heart_20.png</file>
+
+    <positionindex>52</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(lalala)</charactercode>
+	<charactercode default="false">(lalalala)</charactercode>
+	<charactercode default="false">(lala)</charactercode>
+	<charactercode default="false">(notlistening)</charactercode>
+
+    <file size="m">lalala_32.png</file>
+    <file size="s">lalala_20.png</file>
+
+    <positionindex>53</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(heidy)</charactercode>
+	<charactercode default="false">(squirrel)</charactercode>
+
+    <file size="m">heidy_32.png</file>
+    <file size="s">heidy_20.png</file>
+
+    <positionindex>54</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(F)</charactercode>
+	<charactercode default="false">(f)</charactercode>
+	<charactercode default="false">(flower)</charactercode>
+
+    <file size="m">flower_32.png</file>
+    <file size="s">flower_20.png</file>
+
+    <positionindex>55</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(rain)</charactercode>
+	<charactercode default="false">(london)</charactercode>
+
+    <file size="m">rain_32.png</file>
+    <file size="s">rain_20.png</file>
+
+    <positionindex>56</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(sun)</charactercode>
+
+    <file size="m">sunshine_32.png</file>
+    <file size="s">sunshine_20.png</file>
+
+    <positionindex>57</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(tumbleweed)</charactercode>		
+
+    <file size="m">tumbleweed_32.png</file>
+    <file size="s">tumbleweed_20.png</file>
+
+    <positionindex>58</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(music)</charactercode>
+
+    <file size="m">music_32.png</file>
+    <file size="s">music_20.png</file>
+
+    <positionindex>59</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(bandit)</charactercode>
+
+    <file size="m">bandit_32.png</file>
+    <file size="s">bandit_20.png</file>
+
+    <positionindex>60</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(tmi)</charactercode>
+
+    <file size="m">tmi_32.png</file>
+    <file size="s">tmi_20.png</file>
+
+    <positionindex>61</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(coffee)</charactercode>
+
+    <file size="m">coffee_32.png</file>
+    <file size="s">coffee_20.png</file>
+
+    <positionindex>62</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(pi)</charactercode>
+	<charactercode default="false">(pizza)</charactercode>
+
+    <file size="m">pizza_32.png</file>
+    <file size="s">pizza_20.png</file>
+
+    <positionindex>63</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(cash)</charactercode>
+	<charactercode default="false">(mo)</charactercode>
+	<charactercode default="false">($)</charactercode>
+
+    <file size="m">cash_32.png</file>
+    <file size="s">cash_20.png</file>
+
+    <positionindex>64</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(flex)</charactercode>
+	<charactercode default="false">(muscle)</charactercode>
+
+    <file size="m">muscle_32.png</file>
+    <file size="s">muscle_20.png</file>
+
+    <positionindex>65</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(^)</charactercode>
+	<charactercode default="false">(cake)</charactercode>
+
+    <file size="m">cake_32.png</file>
+    <file size="s">cake_20.png</file>
+
+    <positionindex>66</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(beer)</charactercode>
+	<charactercode default="false">(bricklayers)</charactercode>
+
+    <file size="m">beer_32.png</file>
+    <file size="s">beer_20.png</file>
+
+    <positionindex>67</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(d)</charactercode>
+	<charactercode default="false">(D)</charactercode>
+	<charactercode default="false">(drink)</charactercode>
+
+    <file size="m">drink_32.png</file>
+    <file size="s">drink_20.png</file>
+
+    <positionindex>68</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">\o/</charactercode>
+	<charactercode default="false">\:D/</charactercode>
+	<charactercode default="false">\:d/</charactercode>
+	<charactercode default="false">(dance)</charactercode>
+
+    <file size="m">dancing_32.png</file>
+    <file size="s">dancing_20.png</file>
+
+    <positionindex>69</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(ninja)</charactercode>
+
+    <file size="m">ninja_32.png</file>
+    <file size="s">ninja_20.png</file>
+
+    <positionindex>70</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+	<charactercode default="true">(*)</charactercode>
+	<charactercode default="false">(star)</charactercode>
+
+    <file size="m">star_32.png</file>
+    <file size="s">star_20.png</file>
+
+    <positionindex>71</positionindex>
+  </emoticon>
+
+
+
+</emoticon_theme>

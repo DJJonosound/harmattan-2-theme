@@ -1,0 +1,18 @@
+// Need to get divider widget horizontally wide and some space above and below.
+#CommonItemDividerInverted {
+    margin-top:     $MARGIN_LARGE;
+    margin-bottom:  $MARGIN_DOUBLE;
+    margin-left:    0;
+    margin-right:   0;
+}
+
+// Need to bring remote id vertically nearer the contact name.
+#CommonSubTitleInverted {
+    margin-top:     0;
+    margin-bottom:  $MARGIN_LARGE;
+}
+
+// No need to put top margin because we have bottom margin for divider.
+#CommonBodyTextInverted {
+    margin-top:     0;
+}

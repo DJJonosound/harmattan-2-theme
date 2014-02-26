@@ -1,0 +1,35 @@
+TimePickerStyle
+{
+	minutes-color: #FFFFFF;
+        hours-color: #000000;
+        hands-feedback: priority2_move;
+        min-feedback-interval: 70;
+}
+
+TimePickerStyle.Landscape
+{
+    minimum-size: 356px 356px;
+
+    timepicker-disc-minutes: "meegotouch-timepicker-disc-minutes-landscape" 356 356;
+    timepicker-disc-hours: "meegotouch-timepicker-disc-hours-landscape" 356 356;
+	timepicker-light-one: "meegotouch-timepicker-light-1-landscape" 356 356;
+
+    dial-size: 356px 356px;
+    normal-hour-dial-size: 178px 178px;
+
+    font: $FONT_FAMILY_LIGHT 28px;
+}
+
+TimePickerStyle.Portrait
+{
+    minimum-size: 400px 400px;
+
+    timepicker-disc-minutes: "meegotouch-timepicker-disc-minutes-portrait" 400 400;
+    timepicker-disc-hours: "meegotouch-timepicker-disc-hours-portrait" 400 400;
+	timepicker-light-one: "meegotouch-timepicker-light-1-portrait" 400 400;
+
+    dial-size: 400px 400px;
+    normal-hour-dial-size: 200px 200px;
+
+    font: $FONT_FAMILY_LIGHT 32px;
+}

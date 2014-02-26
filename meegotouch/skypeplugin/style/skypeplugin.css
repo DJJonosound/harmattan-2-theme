@@ -1,0 +1,143 @@
+@const SCREEN_NAME_FONT: $FONT_FAMILY bold 26;
+@const FORWARDING_LABEL_FONT: $FONT_FAMILY bold 24;
+@const CONNECTING_LABEL_FONT: $FONT_FAMILY bold 32;
+@const REGISTRATION_HEADER_FONT: $FONT_FAMILY light 30;
+@const PRIMARY_INFO_AREA_FONT: $FONT_FAMILY light 24;
+@const SECONDARY_INFO_AREA_FONT: $FONT_FAMILY bold 24;
+@const SKYPE_AVATAR_TITLE_FONT: $FONT_FAMILY bold 24;
+
+MWindowStyle {
+    x11-startup-pixmap:;
+    startup-fill-color: $COLOR_INVERTED_BACKGROUND;
+}
+
+MApplicationWindowStyle#AccountsUiWindow {
+   navigation-bar-style-name:"MNavigationBarStyleInverted";
+   tool-bar-style-name: "MToolBarStyleInverted";
+   tab-bar-style-name: "MToolbarTabStyleInverted";
+}
+
+#AccountsUiPage.Landscape {
+     background-image: "meegotouch-applicationpage-background-inverted";
+}
+
+#AccountsUiPage.Portrait {
+    background-image: "meegotouch-applicationpage-portrait-background-inverted";
+}
+
+#SkypeInvertedPage {
+    background-image: "meegotouch-applicationpage-background-inverted";
+}
+
+MLabelStyle#PrimaryInfoArea {
+   margin-left: $MARGIN_XLARGE;
+   margin-right: $MARGIN_XLARGE;
+   font: $PRIMARY_INFO_AREA_FONT;
+   color: #8C8C8C;
+}
+
+MLabelStyle#SecondaryInfoArea {
+   margin-left: $MARGIN_XLARGE;
+   margin-right: $MARGIN_XLARGE;
+   font: $SECONDARY_INFO_AREA_FONT;
+   highlight-color: $COLOR_LINK;
+   active-highlight-color: $COLOR_LINK_ACTIVE;
+}
+
+MLabelStyle#SkypeScreenNameInverted {
+    font : $SCREEN_NAME_FONT;
+    color: $COLOR_INVERTED_FOREGROUND;
+    margin-top : $MARGIN_LARGE;
+    margin-bottom : $MARGIN_LARGE;
+    margin-left:   $INDENT_DEFAULT;
+    margin-right:  $INDENT_DEFAULT;
+}
+
+MLabelStyle#SkypeTermsConditionsTxtTopMargin {
+    font:          $FONT_FAMILY light 24;
+    color:         $COLOR_INVERTED_FOREGROUND;
+    margin-top:    $MARGIN_XLARGE;
+    margin-bottom: 0;
+    margin-left:   $INDENT_DEFAULT;
+    margin-right:  $INDENT_DEFAULT;
+}
+
+MLabelStyle#SkypeTermsConditionsTxtBottomMargin {
+    font:          $FONT_FAMILY light 24;
+    color:         $COLOR_INVERTED_FOREGROUND;
+    margin-top: 0;
+    margin-bottom: $MARGIN_XLARGE;
+    margin-left:   $INDENT_DEFAULT;
+    margin-right:  $INDENT_DEFAULT;
+}
+
+
+MLabelStyle#SkypeRegistrationPageHeaderInverted {
+    font:          $REGISTRATION_HEADER_FONT;
+    color:         $COLOR_INVERTED_FOREGROUND;
+    margin-top:    0.6mm;
+    margin-bottom: 0;
+    margin-left:   $INDENT_DEFAULT;
+    margin-right:  $INDENT_DEFAULT;
+}
+
+#TermsAndConditionsPageBottomSpacer {
+    minimum-size:   0 0;
+    preferred-size: 100% 0;
+    maximum-size:   100% 0;
+    margin-top:     0;
+    margin-bottom:  20mm;
+    margin-left:    0;
+    margin-right:   0;
+}
+
+#TermsAndConditionsPageTopSpacer {
+    minimum-size:   0 0;
+    preferred-size: 100% 0;
+    maximum-size:   100% 0;
+    margin-top:     0;
+    margin-bottom:  0;
+    margin-left:    0;
+    margin-right:   0;
+}
+
+#RegistrationPageBottomSpacer {
+    minimum-size:   0 0;
+    preferred-size: 100% 0;
+    maximum-size:   100% 0;
+    margin-top:     0;
+    margin-bottom:  10mm;
+    margin-left:    0;
+    margin-right:   0;
+}
+
+
+MLabelStyle#SkypeForwardingLabel
+{
+    fonrc/skypeaccountwidgetview.cpp: $FORWARDING_LABEL_FONT;
+    color: #1080DD;
+}
+
+#SkypeConnectingLabel
+{
+  font: $CONNECTING_LABEL_FONT;
+  color: #1080DD;
+  margin-top: $MARGIN_LARGE;
+}
+
+#ConnectingLabelStopButtonSpacer {
+    minimum-size:   0 0;
+    preferred-size: 100% 0;
+    maximum-size:   100% 0;
+    margin-top:     0;
+    margin-bottom:  3.8mm;
+    margin-left:    0;
+    margin-right:   0;
+}
+
+DatePickerStyle#bdayDatePicker {
+    background-image: "meegotouch-datepicker-monthgrid-background-portrait" 0 0 32 0;
+    week-day-name-color:  #999999;
+    current-month-sunday-color: $COLOR_BACKGROUND;
+    other-month-sunday-color: #999999;
+}

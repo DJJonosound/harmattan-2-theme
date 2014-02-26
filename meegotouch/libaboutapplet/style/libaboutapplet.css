@@ -1,0 +1,19 @@
+
+AboutWidget MImageWidgetStyle#AboutAppletLogoImage {
+    margin-top:      $MARGIN_XLARGE;
+    margin-bottom:   0;
+    margin-left:     $MARGIN_XLARGE;
+    margin-right:    $MARGIN_XLARGE;
+}
+
+AboutWidget MImageWidgetStyle#AboutAppletBarcodeImage {
+    margin-top:      $MARGIN_XLARGE;
+    margin-bottom:   0;
+    margin-left:     $MARGIN_XLARGE;
+    margin-right:    $MARGIN_XLARGE;
+    minimum-size:    128 128;
+    preferred-size:  128 128;
+    maximum-size:    128 128;
+}
+
+

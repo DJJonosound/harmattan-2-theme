@@ -1,0 +1,36 @@
+@const LOGO_WIDTH: 100px;
+@const LOGO_HEIGHT: 100px;
+
+#CommonHeaderPanel {
+    background-image: none;
+    background-color: #86B40D;
+}
+
+#LogoIcon {
+    maximum-size:   $LOGO_WIDTH $LOGO_HEIGHT;
+    minimum-size:   $LOGO_WIDTH $LOGO_HEIGHT; 
+    preferred-size: $LOGO_WIDTH $LOGO_HEIGHT;
+    margin-left:    $INDENT_DEFAULT;
+    margin-right:   0;
+    margin-top:     $MARGIN_XLARGE;
+    margin-bottom:  $MARGIN_LARGE;
+}
+
+#LogoText {
+    font:           $FONT_FAMILY light 22;
+    color:          $COLOR_FOREGROUND;
+    margin-top:     $MARGIN_XLARGE;
+    margin-bottom:  0;
+    margin-left:    $INDENT_DEFAULT;
+    margin-right:   $INDENT_DEFAULT;
+}
+
+#LogoSubText {
+    font:           $FONT_FAMILY light 20;
+    color:          $COLOR_SECONDARY_FOREGROUND;
+    margin-top:     $MARGIN_LARGE;
+    margin-bottom:  $MARGIN_XLARGE;
+    margin-left:    $INDENT_DEFAULT;
+    margin-right:   $INDENT_DEFAULT;
+}
+

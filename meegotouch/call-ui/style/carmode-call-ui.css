@@ -1,0 +1,636 @@
+//The carmode callui specifications
+/*The OnGoing Button Group*/
+#CallUi_ButtonGroup_Carmode.Landscape{
+    margin-left    : 0;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+
+    padding-left   : 27;
+    padding-right  : 27;
+    padding-top    : 0;
+    padding-bottom : 0;
+
+    minimum-size   : 80% 30%;
+    maximum-size   : 90% 58%;
+}
+
+#CallUi_ButtonGroup_Carmode.Portrait{
+    margin-left    : 0;
+    margin-right   : 0;
+    margin-top     : 0;
+    margin-bottom  : 0;
+    minimum-size   : 100% 35%;
+    maximum-size   : 100% 65%;
+}
+
+#CallAvatarImage_Carmode {
+    padding-left   : 10;
+    padding-right  : 10;
+    padding-top    : 10;
+    padding-bottom : 20;
+    preferred-size : 128 128;
+    minimum-size   : 128 128;
+    maximum-size   : 128 128;
+}
+
+#CallAvatarImage_Carmode.Portrait
+{
+    padding-left   : 0;
+    padding-right  : 0;
+    padding-top    : 0;
+    padding-bottom : 0;
+    preferred-size : 128 128;
+    minimum-size   : 128 128;
+    maximum-size   : 128 128;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#CallInfoPanel_Incoming_Carmode.Landscape{
+    margin-top:50px;
+    minimum-size   : 70%  50%;
+    maximum-size   : 70%  50%;
+    preferred-size : 70%  50%;
+}
+
+#CallInfoPanel_Incoming_Carmode.Portrait{
+    margin-top:50px;
+    minimum-size   : 100%  50%;
+    maximum-size   : 100%  50%;
+    preferred-size : 100%  50%;
+}
+
+#CallInfoPanel_Ongoing_Carmode{
+    minimum-size   : 100%  200px;
+    maximum-size   : 100%  300px;
+    preferred-size : 100%  250px;
+}
+#CallInfoPanel_Ongoing_Carmode.Portrait {
+    minimum-size   : 100%  40%;
+    maximum-size   : 100%  50%;
+}
+
+#CallInfoPanel_Ongoing_Carmode.Landscape {
+    minimum-size   : 50%  25%;
+    maximum-size   : 75%  35%;
+}
+
+#CallUI_EndButton_Carmode {
+    icon-align       : center;
+    icon-size        : 86px 37px;
+    text-color:#ffffff;
+    margin-top:5;
+    margin-bottom:10;
+}
+
+#CallUI_EndButton_Carmode.Landscape {
+    background-image : btnBgBigEndCall-normal-horizontal;
+    minimum-size:300px 100px;
+    maximum-size:690px 110px;
+}
+
+#CallUI_EndButton_Carmode.Portrait {
+    background-image : btnBgBigEndCall-normal-horizontal;
+    minimum-size:100% 100px;
+    maximum-size:100% 110px;
+}
+
+#CallUI_EndButton_Carmode:pressed {
+    background-color : ;
+    background-image : meegotouch-callui-carmode-button-endcall-normal;
+}
+
+#CallUI_EndButton_Carmode:focused {
+    background-color : ;
+    background-image : meegotouch-callui-carmode-button-endcall-selected;
+}
+
+
+/*Start - The Incoming Call Buttons*/
+#CallUI_RejectButton_Carmode{
+    background-image : meegotouch-callui-carmode-button-endcall-portrate-normal $CORNER_MARGINS;
+    font: "Nokia Pure Text"  50px;
+    text-color       : #ffffff;
+    margin-left      : 15px;
+    margin-right     : 15px;
+    margin-top       : 15px;
+    margin-bottom    : 15px;
+    icon-align       : center;
+    icon-size        : 70px 70px;
+}
+
+#CallUI_RejectButton_Carmode:pressed{
+    background-color : ;
+    background-image : meegotouch-callui-carmode-button-endcall-portrate-pressed $CORNER_MARGINS;
+}
+
+#CallUI_RejectButton_Carmode:focused{
+    background-image: meegotouch-callui-carmode-button-endcall-portrate-selected $CORNER_MARGINS;
+    background-color:;
+}
+
+#CallUI_RejectButton_Carmode.Portrait{
+    preferred-size   : 450px 110px;
+    minimum-size     : 400px 110px;
+    maximum-size     : 500px 110px;
+}
+
+#CallUI_RejectButton_Carmode.Landscape{
+    preferred-size   : 47% 110px;
+    minimum-size     : 47% 110px;
+    maximum-size     : 47% 110px;
+}
+
+#CallUI_AnswerButton_Carmode{
+    background-image : meegotouch-callui-carmode-button-call-normal $CORNER_MARGINS;
+    font: "Nokia Pure Text"  50px;
+    text-color           : #ffffff;
+    margin-left      : 15px;
+    margin-right     : 15px;
+    margin-top     : 15px;
+    margin-bottom     : 15px;
+    icon-align       : center;
+    icon-size        : 70px 70px;
+}
+
+#CallUI_AnswerButton_Carmode.Portrait{
+    preferred-size   : 450px 110px;
+    minimum-size     : 400px 110px;
+    maximum-size     : 500px 110px;
+}
+#CallUI_AnswerButton_Carmode.Landscape{
+    preferred-size   : 47% 110px;
+    minimum-size     : 47% 110px;
+    maximum-size     : 47% 110px;
+}
+
+#CallUI_AnswerButton_Carmode:focused{
+    background-image : meegotouch-callui-carmode-button-call-selected $CORNER_MARGINS;
+    background-color : ;
+}
+
+#CallUI_AnswerButton_Carmode:pressed {
+    background-image : meegotouch-callui-carmode-button-call-pressed $CORNER_MARGINS;
+    background-color : ;
+}
+
+/*End - The Incoming Call Buttons*/
+
+#CallUI_HomeButton_Carmode {
+    text-color            : #ffffff;
+    vertical-text-align   : vcenter;
+    horizontal-text-align : hcenter;
+    background-image : meegotouch-callui-carmode-button-back-normal;
+    background-color : ;
+    font: "Nokia Pure Text"  40px;
+    icon-size: 50 50;
+}
+
+#CallUI_HomeButton_Carmode:pressed {
+    background-color : ;
+    background-image : meegotouch-callui-carmode-button-back-pressed;
+}
+
+#CallUI_HomeButton_Carmode:focused {
+    background-color : ;
+    background-image : meegotouch-callui-carmode-button-back-selected;
+}
+
+#CallUI_HomeButton_Carmode.Landscape {
+    minimum-size:82px 270px;
+    maximum-size:82px 460px;
+}
+
+#CallUI_HomeButton_Carmode.Portrait {
+    minimum-size:240px 82px;
+    maximum-size:480px 82px;
+}
+
+/* Start-Volume Control */
+
+#CallUI_VolumeButtonIncr_Carmode{
+    icon-size:39 39;
+    background-image :;
+    background-color :;
+    text-color            : #ffffff;
+    font: "Nokia Pure Text"  40px;
+}
+
+#CallUI_VolumeButtonIncr_Carmode.Portrait{
+    minimum-size:40% 50px;
+    maximum-size:40% 150px;
+    preferred-size  : 40% 60px;
+}
+
+#CallUI_VolumeButtonIncr_Carmode.Landscape{
+    minimum-size:10px 40%;
+    maximum-size:90px 40%;
+    preferred-size   : 90px 40%;
+}
+#CallUI_VolumeButtonIncr_Carmode:pressed {
+    background-color:;
+    background-image : meegotouch-callui-carmode-button-inc-volume-pressed $CORNER_MARGINS;
+}
+
+#CallUI_VolumeButtonIncr_Carmode:focused {
+    background-color : ;
+    background-image : meegotouch-callui-carmode-button-inc-volume-selected $CORNER_MARGINS;
+}
+
+#CallUI_VolumeButtonDecr_Carmode{
+    icon-size:38 10;
+    background-image :;
+    background-color :;
+    text-color            : #ffffff;
+    font: "Nokia Pure Text"  40px;
+}
+#CallUI_VolumeButtonDecr_Carmode.Portrait{
+    minimum-size:40% 50px;
+    maximum-size:40% 150px;
+    preferred-size  : 40% 60px;
+}
+
+#CallUI_VolumeButtonDecr_Carmode.Landscape{
+    minimum-size:10px 40%;
+    maximum-size:90px 40%;
+    preferred-size   : 90px 40%;
+}
+#CallUI_VolumeButtonDecr_Carmode:pressed {
+    background-color:;
+    background-image : meegotouch-callui-carmode-button-dec-volume-pressed $CORNER_MARGINS;
+}
+
+#CallUI_VolumeButtonDecr_Carmode:focused {
+    background-color : ;
+    background-image : meegotouch-callui-carmode-button-dec-volume-selected $CORNER_MARGINS;
+}
+
+#CallUI_VolumeDisplay_Carmode{
+    background-image :;
+}
+
+#CallUI_VolumeDisplay_Carmode.Landscape{
+    minimum-size:10px 50px;
+    maximum-size:90px 150px;
+    preferred-size : 90px 60px;
+    margin-top:10;
+    margin-bottom:10;
+}
+
+#CallUI_VolumeDisplay_Carmode.Portrait{
+    minimum-size:20% 50px;
+    maximum-size:20% 150px;
+    preferred-size  : 20% 60px;
+    margin-top:6;
+    margin-bottom:6;
+}
+
+#CallUI_VolumeControl_Carmode.Landscape {
+    background-image : meegotouch-callui-carmode-vertical-volume;
+    background-color : ;
+    minimum-size:90px 100px;
+    maximum-size:90px 435px;
+}
+
+#CallUI_VolumeControl_Carmode.Portrait {
+    margin-top:10;
+    background-image : meegotouch-callui-carmode-vertical-volume-portrate;
+    background-color : ;
+    minimum-size:100% 90px;
+    maximum-size:100% 130px;
+}
+
+#volIndicator
+{
+    background-color : #ff0000;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:0;
+    margin-right:0;
+    padding-left     : 0;
+    padding-right    : 0;
+    padding-top      : 0;
+    padding-bottom   : 0;
+}
+
+/* End-Volume Control */
+
+/*The Icon Set*/
+#CallUI_IconButton_Carmode {
+    text-color            : #ffffff;
+    vertical-text-align   : vcenter;
+    horizontal-text-align : hcenter;
+    icon-size             : 64px 64px;
+    icon-align            : center;
+    background-image      : meegotouch-callui-carmode-button-incall-normal;
+    background-color      : ;
+    margin-top            : 10px;
+    margin-bottom         : 10px;
+    press-feedback        :;
+    release-feedback      :;
+    cancel-feedback       :;
+}
+
+#CallUI_IconButton_Carmode:pressed {
+    background-color:;
+    background-image : meegotouch-callui-carmode-button-incall-pressed;
+}
+
+#CallUI_IconButton_Carmode:focused {
+    background-color : ;
+    background-image : meegotouch-callui-carmode-button-incall-selected;
+}
+
+#CallUI_IconButton_Carmode:selected {
+    background-color : ;
+    background-image : meegotouch-callui-carmode-button-incall-on;
+}
+
+#CallUI_IconButton_Carmode:disabled {
+    background-color : ;
+    background-image : meegotouch-callui-carmode-button-incall-disabled;
+}
+
+#CallUI_IconButton_Carmode.Landscape {
+    margin-left           : 40px;
+    margin-right          : 40px;
+    minimum-size          :100px 100px;
+    maximum-size          :130px 130px;
+}
+
+#CallUI_IconButton_Carmode.Portrait {
+    margin-left           : 20px;
+    margin-right          : 20px;
+    minimum-size:115px 115px;
+    maximum-size:130px 130px;
+}
+
+/*Start - Labels */
+#CallUi_DurationLabel_OutGoing_Carmode {
+    margin-left   : 16px;
+    margin-right  : 0;
+    margin-top    : 5;
+    margin-bottom : 2;
+    font: "Nokia Pure Headline" bold  40px;
+    minimum-size  : -1 -1;
+    color         :#acea3c;
+}
+
+#CallUi_DurationLabel_OutGoing_Carmode.Landscape {
+  /*  horizontal-align:left;*/
+  minimum-size  : -1 -1;
+  maximum-size: 500 100;
+}
+
+#CallUi_DurationLabel_OutGoing_Carmode.Portrait {
+    /*horizontal-align:center;*/
+    minimum-size  : -1 -1;
+    maximum-size: 480 -1;
+    margin-top    : 0px;
+    margin-bottom : 0px;
+}
+
+#CallUi_DurationLabel_InComing_Carmode {
+    margin-left   : 16px;
+    margin-right  : 0;
+    margin-top    : 5;
+    margin-bottom : 2;
+    minimum-size  : -1 -1;
+    font: "Nokia Pure Headline" bold  40px;
+    color         : #acea3c;
+}
+
+#CallUi_DurationLabel_InComing_Carmode.Landscape {
+   horizontal-alignment:left;
+}
+
+#CallUi_DurationLabel_InComing_Carmode.Portrait {
+    margin-left   : 0px;
+    horizontal-alignment:center;
+    minimum-size  : -1 -1;
+    maximum-size: 480 -1;
+    margin-top    : 0px;
+    margin-bottom : 0px;
+}
+
+#CallUi_NameLabel_In_Out_Carmode {
+    margin-left   : 16px;
+    margin-right  : 0;
+    margin-top    : 5;
+    margin-bottom : 10;
+    color:#ffffff;
+    font: "Nokia Pure Headline" bold  50px;
+}
+
+#CallUi_NameLabel_In_Out_Carmode.Landscape{
+   minimum-size  : -1 -1;
+   maximum-size: 500 100;
+}
+
+#CallUi_NameLabel_In_Out_Carmode.Portrait{
+   margin-left   : 0px;
+   minimum-size  : -1 -1;
+   maximum-size: 460 -1;
+   margin-top    : 0px;
+   margin-bottom : 0px;
+}
+
+#CallUi_NameLabel_Ongoing_Carmode {
+    margin-left   : 16px;
+    margin-right  : 0;
+    margin-top    : 32px;
+    margin-bottom : 6px;
+    minimum-size  : -1 -1;
+    font: "Nokia Pure Headline" bold  50px;
+    color         : #ffffff;
+}
+
+#CallUi_NameLabel_Ongoing_Carmode.Landscape {
+    horizontal-alignment:left;
+    minimum-size  : -1 -1;
+    maximum-size: 500 100;
+}
+
+#CallUi_NameLabel_Ongoing_Carmode.Portrait {
+    horizontal-alignment:center;
+    minimum-size  : -1 -1;
+    margin-top    : 0px;
+    margin-bottom : 0px;
+    maximum-size: 460 -1;
+}
+
+#CallUi_StatusLabel_Carmode {
+    margin-left   : 16px;
+    margin-right  : 0;
+    margin-top    : 0;
+    margin-bottom : 0;
+    font: "Nokia Pure Headline"  bold  40px;
+    text-color            : #ffffff;
+    minimum-size  : -1 -1;
+}
+
+/*End - Labels */
+
+/*Start - Dial Pad*/
+#carmodeui_dialpad {
+    background-tiles : meegotouch-callui-carmode-dialer-background;
+    background-color :;
+    margin-right:6;
+    margin-left:6;
+}
+
+#carmodeui_dialpad.Landscape{
+    minimum-size:400 436;
+    maximum-size:400 436;
+}
+
+#carmodeui_dialpad.Portrait{
+    minimum-size:350 455;
+    maximum-size:550 600;
+}
+
+#carmodeui_dialer_title{
+    color: #ffffff;
+    font: "Nokia Pure Text"  60px;
+    minimum-size:40 80;
+    maximum-size:40 100;
+}
+
+#carmodeui_dialer_subtitle{
+    color: #ffffff;
+    padding-top:20;
+    font: "Nokia Pure Text"  25px ;
+    minimum-size:50 60;
+    maximum-size:50 60;
+}
+
+#carmodeui_dialer_button{
+    margin-top:1;
+    margin-left:1;
+    margin-right:1;
+    margin-bottom:1;
+    background-image:;
+    background-color:;
+    background-tiles:;
+}
+
+#carmodeui_dialer_button.Landscape{
+    padding-left:15;
+    minimum-size:110 105;
+    maximum-size:140 105;
+}
+
+#carmodeui_dialer_button.Portrait {
+    padding-left:25;
+    minimum-size:120 90;
+    maximum-size:170 120;
+}
+
+#carmodeui_dialer_button:pressed {
+    background-image: meegotouch-callui-carmode-button-dial-pressed $CORNER_MARGINS;
+    background-color:;
+}
+
+#carmodeui_dialer_button:focused {
+    background-image: meegotouch-callui-carmode-button-dial-selected $CORNER_MARGINS;
+    background-color:;
+}
+
+#carmodeui_dialer_display{
+    color:#acea3c;
+    background-tiles:;
+    background-color:;
+    background-image:;
+    font: "Nokia Pure Text" 58px;
+}
+
+#carmodeui_dialer_display.Landscape{
+    minimum-size:240 320;
+    maximum-size:280 320;
+    margin-bottom:5;
+}
+#carmodeui_dialer_display.Portrait{
+    minimum-size:350 154;
+    maximum-size:350 154;
+    preferred-size : 350 154;
+}
+
+#carmodeui_dialer_backbutton{
+    icon-size: 20 20;
+    background-image : meegotouch-callui-carmode-button-erase-normal;
+    background-color :;
+}
+#carmodeui_dialer_backbutton.Landscape{
+    minimum-size:95 80;
+    maximum-size:95 80;
+}
+
+#carmodeui_dialer_backbutton.Portrait{
+    minimum-size:95 80;
+    maximum-size:95 80;
+}
+
+#carmodeui_dialer_backbutton:focused{
+    background-image: meegotouch-callui-carmode-button-erase-selected;
+}
+
+#carmodeui_dialer_backbutton:pressed{
+    background-image: meegotouch-callui-carmode-button-erase-pressed;
+}
+
+
+
+
+// ***************************************************************************
+// ** call bubble widget *****************************************************
+
+#CallBubbleWidgetCarmode {
+    background-image       : notification;
+    background-color       :;
+    // ** CallBubble specific items **
+    bubble-pos: 10px 10px; // 64 +64 +63 (+5px status bar correction)
+    // animation update interval (fps)
+    animation-fps: 15;
+    // appear animation duration
+    appear-time: 750; // ms
+    // disappear animation duration
+    disappear-time: 250; //ms
+    // bubble hide delay
+    hide-delay: 5000; // ms
+
+}
+
+#CallBubbleWidgetCarmode.Landscape {
+    minimum-size           : 600 130;
+    maximum-size           : 600 130;
+    preferred-size         : 600 130;
+    margin-left            : 110;
+    margin-right           : 100;
+    margin-top             : 10;
+
+}
+
+#CallBubbleWidgetCarmode.Portrait {
+    minimum-size           : 460 130;
+    maximum-size           : 460 130;
+    preferred-size         : 460 130;
+    margin-left            : 0;
+    margin-right           : 0;
+    margin-top             : 10;
+}
+
+#CallBubbleTextCarmode {
+    margin-left:10;
+    margin-right:10;
+    margin-top:10;
+    margin-bottom:10;
+    font: "Nokia Pure Headline" bold  30px;
+    color         : #FFFFFF;
+}
+
+#CallBubbleIconCarmode {
+    minimum-size   : 0px 0px;
+    maximum-size   : 0px 32px;
+    preferred-size : 0px 0px;
+}

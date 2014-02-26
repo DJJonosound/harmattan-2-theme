@@ -1,0 +1,75 @@
+
+MApplicationWindowStyle#AccountsUiWindow {
+    navigation-bar-style-name:"MNavigationBarStyleInverted";
+}
+
+#WelcomePage.Landscape {
+    background-image: "meegotouch-accounts-landscape-background";
+}
+
+#WelcomePage.Portrait {
+    background-image: "meegotouch-accounts-portrait-background";
+}
+
+#AccountsUiPage.Landscape {
+    background-image: "meegotouch-applicationpage-background-inverted";
+}
+
+#AccountsUiPage.Portrait {
+    background-image: "meegotouch-applicationpage-portrait-background-inverted";
+}
+
+#FilterComboBox {
+    indicator-image:;
+    title-object-name: "FilterComboBoxTitle";
+    sub-title-object-name: "CommonLargeHeaderInverted";
+    progress-indicator-object-name: "CommonProgressBarInverted";
+}
+
+MComboBox#FilterComboBox MListItemStyle {
+    background-tiles: ;
+    background-image: meegotouch-panel-inverted-background;
+}
+
+MComboBox#FilterComboBox MListItemStyle:pressed {
+    background-tiles: ;
+    background-image: meegotouch-panel-inverted-background-pressed;
+}
+
+MLabelStyle#FilterComboBoxTitle {
+    font : $FONT_FAMILY light 1;
+}
+
+MLabelStyle#WelcomeTitleLabel {
+    font : $FONT_FAMILY light 62;
+    color : #AED8FC;
+}
+
+MLabelStyle#EnabledAccountState {
+    margin-top: $MARGIN_XSMALL;
+    margin-left: $INDENT_DEFAULT;
+    margin-bottom: 0;
+    font: $FONT_FAMILY light 22;
+    color : #c8c8c8;
+}
+
+MLabelStyle#DisabledAccountState {
+    margin-top: $MARGIN_XSMALL;
+    margin-left: $INDENT_DEFAULT;
+    margin-bottom: 0;
+    font: $FONT_FAMILY light 22;
+    color : #646464;
+}
+
+MLabelStyle#RightSubtitleLabel {
+    margin-top: $MARGIN_XSMALL;
+    margin-left: 0;
+    margin-bottom: 0;
+    font: $FONT_FAMILY light 22;
+    color : #c8c8c8;
+}
+
+MButtonStyle#CommonToolbarButtonInverted.Portrait {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

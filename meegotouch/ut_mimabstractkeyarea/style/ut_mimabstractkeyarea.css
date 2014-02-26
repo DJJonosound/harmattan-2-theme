@@ -1,0 +1,5 @@
+#FixedKeyArea {
+    use-fixed-key-width: true;
+    key-width-small-fixed: 100px;
+    key-extra-space : 1mm;
+}

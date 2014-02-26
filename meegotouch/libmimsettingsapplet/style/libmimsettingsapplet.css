@@ -1,0 +1,17 @@
+MDialog MListItemStyle:selected {
+    background-tiles: none;
+    background-image: none;
+    background-color: #ffff00;
+}
+
+MDialog MListItemStyle#CommonPanel:selected {
+    background-tiles: none;
+    background-image: none;
+    background-color: #ffff00;
+}
+
+MDialog MWidgetControllerStyle#CommonPanel:selected {
+    background-tiles: none;
+    background-image: none;
+    background-color: #ffff00;
+}

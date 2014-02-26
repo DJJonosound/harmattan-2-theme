@@ -1,0 +1,8 @@
+/* NOTE! load libcontactswidgets style temporarily here */
+@import "../../libcontactswidgets/style/libcontactswidgets.css";
+
+#rememberButton {
+    icon-align: left;
+    horizontal-text-align: left;
+}
+

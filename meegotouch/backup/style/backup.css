@@ -1,0 +1,67 @@
+
+MListItemStyle#CommonTextFrameInverted {
+     background-tiles: ;
+}
+
+#CustomBottomSpacer {                                                            
+minimum-size:   0 0;                                                            
+preferred-size: 100% 0;                                                         
+maximum-size:   100% 0;                                                         
+margin-top:     72px;                                                  
+margin-bottom:  0;                                                              
+margin-left:    0;                                                              
+margin-right:   0;                                                              
+} 
+
+#CustomSideMarginSpacer {                                                            
+minimum-size:   0 0;                                                            
+preferred-size: 16px 0;                                                         
+maximum-size:   100% 0;                                                         
+margin-top:     0;                                                  
+margin-bottom:  0;                                                              
+margin-left:    16px;                                                              
+margin-right:   0;                                                              
+}
+
+MWidgetController#MassStorageWidget MLabelStyle#CommonEmptyStateTitle {
+    color: $COLOR_ACCENT1;
+    margin-left: $MARGIN_XLARGE;
+    margin-right: $MARGIN_XLARGE;
+}
+
+MSheetStyle#FadeInSheetInverted {                           
+    header-slot-style-name: "CommonSheetHeaderPanelInverted";
+    central-slot-style-name: "SheetCentralSlotIverted";      
+    central-slot-position-indicator-style-name: "CommonPositionIndicatorInverted";
+    background-color: $COLOR_INVERTED_BACKGROUND;
+    appearance-animation: "MWidgetFadeAnimation";
+    disappearance-animation: "MWidgetFadeAnimation";
+}
+
+MApplicationPageStyle#CommonApplicationPageInvertedStriped {
+    background-image: "meegotouch-accounts-portrait-background";
+    background-color: $COLOR_INVERTED_BACKGROUND;
+    position-indicator-style-name: "CommonPositionIndicatorInverted";
+}
+
+#SheetCentralSlotIvertedStriped
+{                                                    
+    background-image: "meegotouch-accounts-portrait-background";                         
+    background-tiles: ;                          
+    background-color: $COLOR_INVERTED_BACKGROUND;
+}
+
+
+MSheetStyle#InvertedSSU {                           
+    header-slot-style-name: "CommonSheetHeaderPanelInverted";
+    central-slot-style-name: "SheetCentralSlotIvertedStriped";      
+    central-slot-position-indicator-style-name: "CommonPositionIndicatorInverted";
+    background-color: $COLOR_INVERTED_BACKGROUND;
+    background-image: "meegotouch-accounts-portrait-background";
+    appearance-animation: "MWidgetFadeAnimation";
+    disappearance-animation: "MWidgetFadeAnimation";
+}
+
+
+
+

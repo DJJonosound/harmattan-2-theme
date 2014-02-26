@@ -1,0 +1,13 @@
+/*
+ * this is locationsettings stylesheet, with CSS overrides to overcome limitations in commonstyle alignment
+ */
+ 
+
+NetworkPositioningContainer#CommonLargePanelInverted #CommonRightSwitchInverted	{
+   margin-top: 1.5mm;
+}
+
+NetworkConnectivityContainer#CommonLargePanelInverted #CommonRightSwitchInverted {
+   margin-top: 1.5mm;
+}
+

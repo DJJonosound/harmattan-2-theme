@@ -1,0 +1,13 @@
+
+ChargingIndicatorStyle {
+    charging-icon-animation-interval: 300000;
+    charging-complete-icon-id: "icon-l-energy-management-remove-charger";
+    charging-failed-icon-id: "icon-l-energy-management-insufficient-power";
+    charging-icon-id-list: "icon-l-energy-management-charging-0 icon-l-energy-management-charging-1 icon-l-energy-management-charging-2 icon-l-energy-management-charging-3 icon-l-energy-management-charging-4";
+    background-color: #000000;
+}
+
+MWindowStyle {
+    x11-startup-pixmap: ;
+    startup-fill-color: black;
+}

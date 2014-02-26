@@ -1,0 +1,94 @@
+<emoticon_theme service_uuid="facebook-chat" theme_uuid="76564e15-4d9c-569e-7c5a-b6746523ed31" theme_name="Facebook-Chat">
+
+  <emoticon preview="true">
+    <charactercode default="true">:)</charactercode>
+    <charactercode default="false">:-)</charactercode>
+
+    <file size="m">facebook-happy-normal.png</file>
+    <file size="s">facebook-happy-small.png</file>
+
+    <positionindex>0</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:D</charactercode>
+    <charactercode default="false">:-D</charactercode>
+    <charactercode default="false">:d</charactercode> 
+    <charactercode default="false">:-d</charactercode>
+
+    <file size="m">facebook-smile-normal.png</file>
+    <file size="s">facebook-smile-small.png</file>
+
+    <positionindex>1</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">;)</charactercode>
+   <charactercode default="false">;-)</charactercode>
+
+   <file size="m">facebook-wink-normal.png</file>
+   <file size="s">facebook-wink-small.png</file>
+
+   <positionindex>2</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:(</charactercode>
+   <charactercode default="false">:-(</charactercode>
+
+   <file size="m">facebook-sad-normal.png</file>
+   <file size="s">facebook-sad-small.png</file>
+
+   <positionindex>3</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:/</charactercode>
+   <charactercode default="false">:-/</charactercode>
+
+   <file size="m">facebook-doubt-normal.png</file>
+   <file size="s">facebook-doubt-small.png</file>
+
+   <positionindex>4</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">&gt;:(</charactercode>
+   <charactercode default="false">&gt;:-(</charactercode>
+
+   <file size="m">facebook-angry-normal.png</file>
+   <file size="s">facebook-angry-small.png</file>
+
+   <positionindex>5</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:*</charactercode>
+   <charactercode default="false">:-*</charactercode>
+
+   <file size="m">facebook-kiss-normal.png</file>
+   <file size="s">facebook-kiss-small.png</file>
+
+   <positionindex>6</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:'(</charactercode>
+   <charactercode default="false">:'-(</charactercode>
+
+   <file size="m">facebook-cry-normal.png</file>
+   <file size="s">facebook-cry-small.png</file>
+
+   <positionindex>7</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">&lt;3</charactercode>
+
+   <file size="m">facebook-heart-normal.png</file>
+   <file size="s">facebook-heart-small.png</file>
+
+   <positionindex>8</positionindex>
+  </emoticon>
+
+</emoticon_theme>   

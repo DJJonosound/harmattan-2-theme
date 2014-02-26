@@ -1,0 +1,8 @@
+CallWidget MLabelStyle#CommonTitle {
+    color: #79CD19;
+}
+
+CallWidget MLabelStyle#CommonSubTitle {
+    color: #79CD19;
+    text-opacity: 0.8;
+}

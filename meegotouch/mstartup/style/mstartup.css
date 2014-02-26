@@ -1,0 +1,232 @@
+
+/*
+ * Suggested selector syntax to use: ParentWidget MyStyle#objectName
+ */
+
+MSheetStyle.Landscape {
+	background-image: "meegotouch-applicationpage-background-inverted";
+}
+
+MSheetStyle.Portrait {
+	background-image: "meegotouch-applicationpage-portrait-background-inverted";
+}
+
+MApplicationPageStyle.Landscape {
+	background-image: "meegotouch-applicationpage-background-inverted";
+}
+
+MApplicationPageStyle.Portrait {
+	background-image: "meegotouch-applicationpage-portrait-background-inverted";
+}
+
+/*
+ *	MainWindow
+ */
+
+MApplicationWindowStyle#MainWindow {
+	navigation-bar-style-name:"MNavigationBarStyleInverted";
+	tool-bar-style-name: "MToolBarStyleInverted";
+	tab-bar-style-name: "MToolbarTabStyleInverted";
+}
+
+
+/*
+ *	MainPage
+ */
+
+//MainPage MLabel
+#CommonXLargeHeaderInverted {
+	color: $COLOR_ACCENT1;
+}
+
+MainPage MWidgetStyle#CommonXLargeHeaderPanelInverted.Landscape {
+	margin-top: 35px;
+	minimum-size: -1px 102px;
+	maximum-size: -1px 102px;
+	preferred-size: -1px 102px;
+}
+
+MainPage MWidgetStyle#CommonXLargeHeaderPanelInverted.Portrait {
+	margin-top: 35px;
+	minimum-size: -1px 205px;
+	maximum-size: -1px 205px;
+	preferred-size: -1px 205px;
+}
+
+/*
+ *	TimePage
+ */
+
+//TimePage MLabel
+#CommonLargeHeaderInverted {
+	color: $COLOR_ACCENT1;
+}
+
+#s_DigitalTime.Landscape
+{
+	margin-left: $INDENT_DEFAULT;
+	margin-right: $INDENT_DEFAULT;
+}
+
+#s_DigitalTime.Portrait {
+	preferred-size: -1 60px;
+	minimum-size: -1 60px;
+	maximum-size: -1 60px;
+
+	color: $COLOR_INVERTED_FOREGROUND;
+	font: $FONT_FAMILY light 60px;
+	font-weight: light;
+
+	text-margin-top: 0;
+	text-margin-bottom: 0;
+	text-margin-left: 0;
+	text-margin-right: 0;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+TimePage DatePickerStylableButton MLabel#ButtonLabel.Portrait
+{
+	font: $FONT_FAMILY light 60px;
+	font-color: $COLOR_INVERTED_FOREGROUND;
+}
+
+TimePage DatePickerStylableButton MLabel#ButtonLabel.Landscape
+{
+	font: $FONT_FAMILY light 98px;
+	font-color: $COLOR_INVERTED_FOREGROUND;
+}
+
+TimePickerStyle#n_TimePicker.Landscape
+{
+	minimum-size: 356px 356px;
+	preferred-size: 356px 356px;
+	maximum-size: 356px 356px;
+}
+
+TimePickerStyle#n_TimePicker.Portrait
+{
+	minimum-size: 416px 416px;
+	preferred-size: 416px 416px;
+	maximum-size: 416px 416px;
+}
+
+#n_TimePageTopSpacer
+{
+	minimum-size: -1px 16px;
+	maximum-size: -1px 16px;
+	preferred-size: -1px 16px;
+}
+
+/*
+ *	DatePage
+ */
+
+DatePage MLabel#CommonLargeHeaderInverted {
+	color: $COLOR_ACCENT1;
+}
+
+#s_DigitalDate.Landscape
+{
+	margin-top: 115px;
+	margin-left: $INDENT_DEFAULT;
+	margin-right: $INDENT_DEFAULT;
+}
+
+#s_DigitalDate.Portrait {
+	preferred-size: -1 50px;
+	minimum-size: -1 50px;
+	maximum-size: -1 50px;
+
+	color: $COLOR_INVERTED_FOREGROUND;
+	font: $FONT_FAMILY light 50px;
+	font-weight: light;
+}
+
+DatePage DatePickerStylableButton MLabel#ButtonLabel.Portrait
+{
+	font: $FONT_FAMILY light 50px;
+	font-color: $COLOR_INVERTED_FOREGROUND;
+}
+
+DatePage DatePickerStylableButton MLabel#ButtonLabel.Landscape
+{
+	font: $FONT_FAMILY light 50px;
+	font-color: $COLOR_INVERTED_FOREGROUND;
+}
+
+#n_MonthWidget.Landscape
+{
+	minimum-size: 432px 382px;
+	preferred-size: 432px 382px;
+	maximum-size: 432px 382px;
+}
+
+#n_MonthWidget.Portrait
+{
+	minimum-size: 480px 435px;
+	preferred-size: 480px 435px;
+	maximum-size: 480px 435px;
+}
+
+DatePage MLabelStyle#MagnifierLabel {
+	background-image: "meegotouch-datepicker-magnifier-background";
+	color: $COLOR_BACKGROUND;
+}
+
+MButtonStyle#SuwMonthNameButton {
+	/* Month and year label */
+	background-image: ;
+	background-color: transparent;
+
+	minimum-size: 33mm 6.6mm;
+	maximum-size: 33mm 6.6mm;
+	preferred-size: 33mm 6.6mm;
+
+	font: $FONT_FAMILY_LIGHT 34;
+	text-color: $COLOR_BACKGROUND;
+}
+
+MButtonStyle#SuwMonthNameButton:pressed {
+	/* Month and year label pressed */
+	background-image: ;
+	background-color: transparent;
+
+	font: $FONT_FAMILY_LIGHT 34;
+	text-color: $COLOR_ACCENT1;
+}
+
+DatePickerStyle#n_DatePicker { 
+	background-image: "meegotouch-datepicker-monthgrid-background-portrait" 0 0 32 0;
+
+	current-day-font: $FONT_FAMILY bold 24;
+	selected-day-font: $FONT_FAMILY bold 24;
+	/* Week day label */
+	week-day-name-color: #999999;
+	week-day-name-weekend-color: $COLOR_ACCENT1;
+	/* Days of current month */
+	current-month-sunday-color: $COLOR_BACKGROUND;
+	/* Days of the next or previous month*/
+	other-month-sunday-color: #999999;
+	/* Selected day label */
+	selected-current-day-color: $COLOR_BACKGROUND;
+	current-day-color: $COLOR_ACCENT1;
+
+	/* Selected day indication */
+	selected-day-image: "meegotouch-datepicker-monthgrid-daycell-selected-day-portrait";
+	selected-current-day-image: "meegotouch-datepicker-monthgrid-daycell-selected-day-current-portrait";
+	/* Current day background */
+	current-day-image: "meegotouch-datepicker-monthgrid-daycell-current-day-portrait";
+	month-button-style: "SuwMonthNameButton";
+}
+
+#n_DatePageTopSpacer
+{
+	minimum-size: -1px 16px;
+	maximum-size: -1px 16px;
+	preferred-size: -1px 16px;
+}
+

@@ -1,0 +1,26 @@
+#CertificateButton.Landscape {
+    maximum-size: 300 -1;
+}
+
+#CertificateButton.Portrait {
+    maximum-size: 300 -1;
+}
+
+MDialogStyle#WideButtons {
+    dialog-button-fixed-width: 30mm;
+}
+
+CertificateItemWidget MLabelStyle#CommonSubTextInverted {
+    color: $COLOR_WARNING;
+}
+
+MApplicationWindowStyle {
+    navigation-bar-style-name: "MNavigationBarStyleInverted";
+    tool-bar-style-name: "MToolBarStyleInverted";
+    tab-bar-style-name: "MToolbarTabStyleInverted";
+}
+
+MWindowStyle {
+    x11-startup-pixmap: ;
+    startup-fill-color: black;
+}

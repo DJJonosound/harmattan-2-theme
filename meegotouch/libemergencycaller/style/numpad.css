@@ -1,0 +1,109 @@
+// usual numeric button
+@const C_NUMPAD_NUM_BUTTON_BG: none;
+@const C_NUMPAD_NUM_BUTTON_BG_PRESSED: meegotouch-pin-touch-feedback 0 0 0 0;
+
+@const C_NUMPAD_BUTTON_SIZE: 11.0mm 11.0mm;
+@const C_NUMPAD_MARGIN_HOR: 2.0mm;
+@const C_NUMPAD_MARGIN_VER: 0.0mm;
+@const C_NUMPAD_PADDING_HOR: 0.5mm;
+@const C_NUMPAD_PADDING_VER: 0.0mm;
+
+// ----------------------------------------------------------------------------
+// NUMPAD BUTTONS
+// ----------------------------------------------------------------------------
+
+NumpadButton MLabelStyle#celluiNumpadButtonPrimaryLabel {
+    font: $FONT_FAMILY bold 6.0mm;
+    color: $COLOR_INVERTED_FOREGROUND;
+    minimum-size: -1 6.1mm;
+    maximum-size: -1 6.1mm;
+    preferred-size: -1 6.1mm;
+    margin-top: 1.0mm;
+    margin-bottom: 0mm;
+    margin-left: 0mm;
+    margin-right: 0mm;
+}
+
+NumpadButton MLabelStyle#celluiNumpadButtonSecondaryLabel {
+    font: $FONT_FAMILY normal uppercase 2.0mm;
+    color: $COLOR_INVERTED_SECONDARY_FOREGROUND;
+    minimum-size: -1 -1;
+    maximum-size: -1 -1;
+    preferred-size: -1 -1;
+    margin-top: 1mm;
+    margin-bottom: 0mm;
+    margin-left: 0mm;
+    margin-right: 0mm;
+}
+
+Numpad MButtonStyle#celluiButton {
+    background-image: $C_NUMPAD_NUM_BUTTON_BG;
+    background-color: $C_NUMPAD_NUM_BUTTON_BG;
+    margin-left: $C_NUMPAD_MARGIN_HOR;
+    margin-right: $C_NUMPAD_MARGIN_HOR;
+    margin-top: $C_NUMPAD_MARGIN_VER;
+    margin-bottom: $C_NUMPAD_MARGIN_VER;
+    padding-left: $C_NUMPAD_PADDING_HOR;
+    padding-right: $C_NUMPAD_PADDING_HOR;
+    padding-top: $C_NUMPAD_PADDING_VER;
+    padding-bottom: $C_NUMPAD_PADDING_VER;
+    minimum-size: $C_NUMPAD_BUTTON_SIZE;
+    maximum-size: $C_NUMPAD_BUTTON_SIZE;
+    preferred-size: $C_NUMPAD_BUTTON_SIZE;
+    transition: "imploding-background";
+    press-feedback: priority2_static_press;
+    release-feedback: priority2_static_release;
+}
+
+Numpad MButtonStyle#celluiButton:pressed {
+    background-image: $C_NUMPAD_NUM_BUTTON_BG_PRESSED;
+}
+
+// ----------------------------------------------------------------------------
+// 0 BUTTON
+// ----------------------------------------------------------------------------
+
+Numpad MButtonStyle#celluiButton0 {
+    background-image: $C_NUMPAD_NUM_BUTTON_BG;
+    background-color: $C_NUMPAD_NUM_BUTTON_BG;
+    margin-left: $C_NUMPAD_MARGIN_HOR;
+    margin-right: $C_NUMPAD_MARGIN_HOR;
+    margin-top: $C_NUMPAD_MARGIN_VER;
+    margin-bottom: $C_NUMPAD_MARGIN_VER;
+    padding-left: $C_NUMPAD_PADDING_HOR;
+    padding-right: $C_NUMPAD_PADDING_HOR;
+    padding-top: $C_NUMPAD_PADDING_VER;
+    padding-bottom: $C_NUMPAD_PADDING_VER;
+    minimum-size: $C_NUMPAD_BUTTON_SIZE;
+    maximum-size: $C_NUMPAD_BUTTON_SIZE;
+    preferred-size: $C_NUMPAD_BUTTON_SIZE;
+    transition: "imploding-background";
+    press-feedback: priority2_static_press;
+    release-feedback: priority2_static_release;
+}
+
+Numpad MButtonStyle#celluiButton0:pressed {
+    background-image: $C_NUMPAD_NUM_BUTTON_BG_PRESSED;
+}
+
+NumpadButton#celluiButton0 MLabelStyle#celluiNumpadButtonPrimaryLabel {
+    margin-top: 1.5mm;
+}
+
+// ----------------------------------------------------------------------------
+// NUMPAD
+// ----------------------------------------------------------------------------
+
+MWidgetStyle#celluiNumpad {
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+    margin-left: 0mm;
+    margin-right: 0mm;
+    padding-top: 2.4mm;
+    padding-bottom: 0.0mm;
+    padding-left: 1.5mm;
+    padding-right: 1.5mm;
+    preferred-size: 100% -1;
+    minimum-size: 100% -1;
+    maximum-size: 100% -1;
+}

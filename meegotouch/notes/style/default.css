@@ -1,0 +1,9 @@
+JournalWidgetStyle {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    max-lines: 3;
+    minimum-size: -1 11.8mm;
+    maximum-size: -1 12.7mm;
+    preferred-size: -1 12.7mm;
+}

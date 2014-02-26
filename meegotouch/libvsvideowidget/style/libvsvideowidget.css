@@ -1,0 +1,33 @@
+VSVideoWidgetStyle {
+    pause-indicator-id : "icon-l-common-video-playback";
+    play-icon-id : "icon-m-toolbar-mediacontrol-play-white";
+    pause-icon-id : "icon-m-toolbar-mediacontrol-pause-white";
+    stop-icon-id : "icon-m-toolbar-mediacontrol-stop-white";
+    forward-icon-id : "icon-m-toolbar-mediacontrol-forward-white";
+    rewind-icon-id : "icon-m-toolbar-mediacontrol-backwards-white";
+}
+
+VSVideoWidget MButtonStyle#VSVideoControlButton {
+    icon-align: center;
+    minimum-size: 8mm -1;
+    maximum-size: 8mm -1;
+}
+
+VSVideoWidget MWidget#VideoPlayBackControl {
+    background-image: "meegotouch-video-play-back-control-background";
+}
+
+VSVideoWidget MButtonStyle#VSVideoControlPauseIndicator {
+    background-image:;
+    background-opacity: 0.0;
+    icon-size: 8mm 8mm;
+    minimum-size: 8mm 8mm;
+    maximum-size: 8mm 8mm;
+}
+
+VSVideoWidget MSeekbarStyle#CommonSeekerInverted {
+    margin-left: 0;
+    margin-right: 0;
+    background-elapsed-image: "color11-meegotouch-slider-elapsed-inverted-background-horizontal" 4px 4px 4px 4px;
+    background-received-image: "color11-meegotouch-slider-received-inverted-background-horizontal" 4px 4px 4px 4px;
+}

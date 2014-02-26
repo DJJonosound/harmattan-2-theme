@@ -1,0 +1,40 @@
+/* overrides to common styles for colour story */
+@const COLOR_ACCENT1 : COLOR_ACCENT10;
+
+#CommonSeekerInverted {
+    background-elapsed-image: "color10-meegotouch-slider-elapsed-inverted-background-horizontal" 4px 4px 4px 4px;
+    background-received-image: "color10-meegotouch-slider-received-inverted-background-horizontal" 4px 4px 4px 4px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    maximum-size: -1 4.4mm;
+    minimum-size: -1 4.4mm;
+    preferred-size: -1 4.4mm;
+}
+
+#CommonSheetHeaderButtonAccentInverted {
+    background-image: color10-meegotouch-sheet-button-accent-inverted-background $CORNER_MARGINS;
+}
+#CommonSheetHeaderButtonAccentInverted:pressed {
+    background-image: color10-meegotouch-sheet-button-accent-inverted-background-pressed $CORNER_MARGINS;
+}
+#CommonSheetHeaderButtonAccentInverted:disabled {
+    background-image: color10-meegotouch-sheet-button-accent-inverted-background-disabled $CORNER_MARGINS;
+}
+
+#CommonSingleInputFieldLabeledInverted:selected {
+    background-image: color10-meegotouch-textedit-background-selected $CORNER_MARGINS;
+}
+
+/* Set the startup color of the window to black to avoid flickering (default is white) */
+MWindowStyle {
+    x11-startup-pixmap: ;
+    startup-fill-color: black;
+}
+
+MWindowStyle.Landscape {
+    x11-startup-pixmap: ;
+    startup-fill-color: black;
+}
+

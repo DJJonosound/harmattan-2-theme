@@ -1,0 +1,15 @@
+/* Styles for widgets on SearchPage */
+SearchPage MCompleterStyle#lp_completer {
+    highlight-color: $COLOR_FOREGROUND;
+}
+
+SearchPage MPannableWidgetStyle#lp_locationsListViewport {
+    /* Values copied from mpannablewidgetstyle.css
+       We put them here so that an app which overrides all MPannableViewports'
+       sizes doesn't mess up Location Picker.
+    */
+    preferred-size: 1 1;
+    minimum-size: 0 0;
+    maximum-size: 10000 10000;
+}
+

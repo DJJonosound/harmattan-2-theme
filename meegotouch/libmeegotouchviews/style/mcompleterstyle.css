@@ -1,0 +1,8 @@
+MCompleterStyle {
+    highlight-color: $COLOR_FOREGROUND;
+}
+
+#MCompleterTotalButton {
+    text-color: $COLOR_FOREGROUND;
+}
+

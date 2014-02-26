@@ -1,0 +1,36 @@
+MWindowStyle {
+    x11-startup-pixmap:;
+    startup-fill-color: $COLOR_INVERTED_BACKGROUND;
+}
+
+MApplicationWindowStyle#AccountsUiWindow {
+    navigation-bar-style-name:"MNavigationBarStyleInverted";
+    tool-bar-style-name: "MToolBarStyleInverted";
+    tab-bar-style-name: "MToolbarTabStyleInverted";
+}
+
+#AccountsUiPage.Landscape {
+    background-image: "meegotouch-applicationpage-background-inverted";
+}
+
+#AccountsUiPage.Portrait {
+    background-image: "meegotouch-applicationpage-portrait-background-inverted";
+}
+
+#ProgressIndicatorPage.Landscape {
+    background-image: "meegotouch-applicationpage-background-inverted";
+}
+
+#ProgressIndicatorPage.Portrait {
+    background-image: "meegotouch-applicationpage-portrait-background-inverted";
+}
+
+MLabelStyle {
+    color : #FFFFFF;
+}
+
+MApplicationPage MLabelStyle#ConnectingLabel {
+  font: $FONT_FAMILY bold 32;
+  color: #1080DD;
+}
+

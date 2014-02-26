@@ -1,0 +1,42 @@
+MApplicationWindowStyle {
+    navigation-bar-style-name: "MNavigationBarStyleInverted";
+    tool-bar-style-name: "MToolBarStyleInverted";
+    tab-bar-style-name: "MToolbarTabStyleInverted";
+}
+
+MWindowStyle {
+    x11-startup-pixmap:;
+    startup-fill-color: $COLOR_INVERTED_BACKGROUND;
+}
+/* Taken from /usr/share/themes/base/meegotouch/libmeegotouchviews/style/commonlayouts/commonpanelstyle.css */
+@const CTITLE_FONT:    $FONT_FAMILY bold 26;
+@const CTITLE_COLOR_INVERTED:          $COLOR_INVERTED_FOREGROUND;
+
+#EmailCommonTitleInverted {
+   font:          $CTITLE_FONT;
+   color:         $CTITLE_COLOR_INVERTED;
+   margin-top:    0;
+   margin-bottom: 0;
+   margin-left:   $INDENT_DEFAULT;
+   margin-right:  $INDENT_DEFAULT;
+}
+
+#settingsHeaderPanel {
+    minimum-size:     -1 172px;
+    padding-top:      $MARGIN_LARGE;
+    padding-bottom:   $MARGIN_LARGE;
+}
+
+#settingsWidget {
+    margin-top:        0;
+    margin-bottom:     0;
+    margin-left:       0;
+    margin-right:      0;
+    padding-top:        0;
+    padding-bottom:     0;
+    padding-left:       0;
+    padding-right:      0;
+    title-object-name: "EmailCommonTitleInverted";
+    subtitle-object-name: "CommonSubTitleInverted";
+    image-object-name: "CommonMainIcon";
+}

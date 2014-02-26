@@ -1,0 +1,40 @@
+MWidgetStyle#ProfileWidgetContainerNoPlugin
+{
+    minimum-size: 0px 0px;
+    maximum-size: 0px 0px;
+    preferred-size: 0px 0px;
+
+    /* align it to center */
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+MWidgetStyle#ProfileWidgetContainer
+{
+    /* align it to center */
+    margin-left: 16px;
+    margin-right: 16px;
+
+    /* 480 = 448 + 16 + 16 */
+    minimum-size: 448px 150px;
+}
+
+AlertToneAppletWidget VolumeBarStyle
+{
+    /* media volume */
+    minimum-size: 44.8mm 3.0mm;
+    maximum-size: 44.8mm 3.0mm;
+}
+
+AlertToneAppletWidget ProfileVolumeBarStyle
+{
+    /* profile volume */
+    minimum-size: 44.8mm 3.0mm;
+    maximum-size: 44.8mm 3.0mm;
+}
+
+#MApplicationWindow
+{
+    tool-bar-style-name: "MToolBarStyleInverted";
+}
+

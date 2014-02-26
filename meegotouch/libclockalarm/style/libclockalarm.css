@@ -1,0 +1,27 @@
+LockScreenWidget MStylableWidgetStyle#CommonLargePanelInverted
+{
+	preferred-size:	100% 130;
+	minimimum-size:	100% 130;
+	maximum-size:	100% 190;
+}
+LockScreenWidget MLabelStyle#LockScreen_AlarmTitle
+{
+	font:          $FONT_FAMILY bold 48;
+	color:         $COLOR_INVERTED_FOREGROUND;
+       preferred-line-count: 2;
+       preferred-line-count-behavior: "limit";
+       wrapMode: Text.WrapAnywhere;  
+	margin-top:    0;
+	margin-bottom: 0; 
+	margin-left:   $INDENT_DEFAULT;
+	margin-right:  128px;
+}
+LockScreenWidget MLabelStyle#LockScreen_AlarmSubTitle
+{
+	font:          $FONT_FAMILY light 40;
+	color:         $COLOR_INVERTED_FOREGROUND;
+	margin-top:    15;
+	margin-bottom: 0;
+	margin-left:   $INDENT_DEFAULT;
+	margin-right:  $INDENT_DEFAULT;
+}

@@ -1,0 +1,28 @@
+#MApplicationWindow {
+    tool-bar-style-name: "MToolBarStyleInverted";
+}
+
+WallpaperViewWidgetStyle {
+    image-background-color: Black;
+    background-color: Black;
+    /*
+     * Theming for the kinetic moving of the wallpaper editor in the widget.
+     * Maybe these values should be linked to the values found in
+     * mpannablewidgetstyle.css
+     */
+    pointer-spring-k: 0;
+    friction: 0;
+    sliding-friction: 0.95;
+    border-spring-k: 0.06;
+    border-friction: 0.66;
+    maximum-velocity: 100.0;
+    support-pan-edit: false;
+    support-punch-edit: false;
+}
+
+MSheetStyle#Overlay {
+    header-slot-style-name: "CommonOverlaySheetHeaderPanel";
+    central-slot-style-name: "SheetCentralSlotIverted";
+    central-slot-position-indicator-style-name: "CommonPositionIndicatorInverted";
+    background-color: $COLOR_INVERTED_BACKGROUND;
+}

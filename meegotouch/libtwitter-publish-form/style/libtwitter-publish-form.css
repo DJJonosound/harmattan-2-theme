@@ -1,0 +1,18 @@
+TwitterForm MLabelStyle#TweetCounterOk {
+    color: $COLOR_ACCENT2;
+    font: $FONT_FAMILY light 22;
+    margin-top:    0.8mm;
+    margin-bottom: 0;
+    margin-left:   $INDENT_DEFAULT;
+    margin-right:  $INDENT_DEFAULT;
+
+}
+
+TwitterForm MLabelStyle#TweetCounterFail {
+    color: $COLOR_WARNING;
+    font: $FONT_FAMILY light 22;
+    margin-top:    0.8mm;
+    margin-bottom: 0;
+    margin-left:   $INDENT_DEFAULT;
+    margin-right:  $INDENT_DEFAULT;
+}

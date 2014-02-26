@@ -1,0 +1,181 @@
+<emoticon_theme service_uuid="" theme_uuid="12345678-9abc-def0-1234-56789abcdef0" theme_name="Sailfish">
+  <emoticon preview="false">
+    <charactercode default="true">:)</charactercode>
+    <charactercode default="false">:-)</charactercode>
+
+    <file size="m">icon-m-messaging-smiley-happy.png</file>
+    <file size="s">icon-s-messaging-smiley-happy.png</file>
+
+    <positionindex>0</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:D</charactercode>
+    <charactercode default="false">:-D</charactercode>
+    <charactercode default="false">:d</charactercode> 
+    <charactercode default="false">:-d</charactercode>
+
+    <file size="m">icon-m-messaging-smiley-very-happy.png</file>
+    <file size="s">icon-s-messaging-smiley-very-happy.png</file>
+
+    <positionindex>1</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">;)</charactercode>
+   <charactercode default="false">;-)</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-wink.png</file>
+   <file size="s">icon-s-messaging-smiley-wink.png</file>
+
+   <positionindex>2</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:(</charactercode>
+   <charactercode default="false">:-(</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-sad.png</file>
+   <file size="s">icon-s-messaging-smiley-sad.png</file>
+
+   <positionindex>3</positionindex>
+  </emoticon>
+
+  <emoticon preview="true">
+   <charactercode default="true">:/</charactercode>
+   <charactercode default="false">:-/</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-skeptical.png</file>
+   <file size="s">icon-s-messaging-smiley-skeptical.png</file>
+
+   <positionindex>4</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:@</charactercode>
+   <charactercode default="false">:-@</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-angry.png</file>
+   <file size="s">icon-s-messaging-smiley-angry.png</file>
+
+   <positionindex>5</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:*</charactercode>
+   <charactercode default="false">:-*</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-kiss.png</file>
+   <file size="s">icon-s-messaging-smiley-kiss.png</file>
+
+   <positionindex>6</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:'(</charactercode>
+   <charactercode default="false">:'-(</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-cry.png</file>
+   <file size="s">icon-s-messaging-smiley-cry.png</file>
+
+   <positionindex>7</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">&lt;3</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-heart.png</file>
+   <file size="s">icon-s-messaging-smiley-heart</file>
+
+   <positionindex>8</positionindex>
+  </emoticon>
+  
+   <emoticon preview="false">
+    <charactercode default="true">8)</charactercode>
+    <charactercode default="false">8-)</charactercode>
+
+    <file size="m">icon-m-messaging-smiley-cool.png</file>
+    <file size="s">icon-s-messaging-smiley-cool.png</file>
+
+    <positionindex>9</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+    <charactercode default="true">:O</charactercode>
+    <charactercode default="false">:-O</charactercode>
+
+    <file size="m">icon-m-messaging-smiley-surprised.png</file>
+    <file size="s">icon-s-messaging-smiley-surprised.png</file>
+
+    <positionindex>10</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:S</charactercode>
+   <charactercode default="false">:-S</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-worried.png</file>
+   <file size="s">icon-m-messaging-smiley-worried.png</file>
+
+   <positionindex>11</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:X</charactercode>
+   <charactercode default="false">:-X</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-lips-sealed.png</file>
+   <file size="s">icon-s-messaging-smiley-lips-sealed.png</file>
+
+   <positionindex>12</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:P</charactercode>
+   <charactercode default="false">:-P</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-tongue.png</file>
+   <file size="s">icon-s-messaging-smiley-tongue.png</file>
+
+   <positionindex>13</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">&gt;)</charactercode>
+   <charactercode default="false">&gt;-)</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-evil.png</file>
+   <file size="s">icon-s-messaging-smiley-evil.png</file>
+
+   <positionindex>14</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">;D</charactercode>
+   <charactercode default="false">;-D</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-grin.png</file>
+   <file size="s">icon-s-messaging-smiley-grin.png</file>
+
+   <positionindex>15</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">|)</charactercode>
+   <charactercode default="false">|-)</charactercode>
+
+   <file size="m">icon-m-messaging-smiley-sleepy.png</file>
+   <file size="s">icon-m-messaging-smiley-sleepy.png</file>
+
+   <positionindex>16</positionindex>
+  </emoticon>
+
+  <emoticon preview="false">
+   <charactercode default="true">:&lt;</charactercode>
+    <charactercode default="true">:-&lt;</charactercode>
+   <file size="m">icon-m-messaging-smiley-sarcastic.png</file>
+   <file size="s">icon-m-messaging-smiley-sarcastic.png</file>
+
+   <positionindex>17</positionindex>
+  </emoticon>
+  </emoticon_theme>

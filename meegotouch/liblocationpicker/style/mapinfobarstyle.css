@@ -1,0 +1,66 @@
+MapInfobarStyle {
+    background-opacity: 0.0;
+    visibility-animation-easing-curve: inquad;
+    visibility-animation-fast-duration: 150;
+    visibility-animation-slow-duration: 450;
+    visibility-animation-appear-delay: 700;
+    appeared-opacity: 1.0;
+    disappeared-opacity: 0.0;
+    previous-button-icon-id: "icon-m-toolbar-previous-white";
+    next-button-icon-id: "icon-m-toolbar-next-white";
+}
+
+MapInfobarStyle.Portrait {
+    minimum-size: 40 72;
+    preferred-size: 100% 72;
+    maximum-size: 100% -1;
+}
+
+MapInfobarStyle.Landscape {
+    minimum-size: 40 72;
+    preferred-size: 100% 72;
+    maximum-size: 100% -1;
+}
+
+MapInfobar MButtonStyle#CommonLeftInputFieldButtonInverted {
+    minimum-size: 48px 48px;
+    maximum-size: 48px 48px;
+    preferred-size: 48px 48px;
+    background-opacity: 0.8;
+}
+
+MapInfobar MButtonStyle#CommonLeftInputFieldButtonInverted:pressed {
+    background-image: color3-meegotouch-button-background-pressed $CORNER_MARGINS;
+}
+
+MapInfobar MButtonStyle#CommonRightInputFieldButtonInverted {
+    minimum-size: 48px 48px;
+    maximum-size: 48px 48px;
+    preferred-size: 48px 48px;
+    background-opacity: 0.8;
+}
+
+MapInfobar MButtonStyle#CommonRightInputFieldButtonInverted:pressed {
+    background-image: color3-meegotouch-button-background-pressed $CORNER_MARGINS;
+}
+
+MapInfobar MButtonStyle#CommonSmallIconButtonInverted {
+    background-opacity: 0.8;
+}
+
+MapInfobar MButtonStyle#CommonSmallIconButtonInverted:pressed {
+    background-image: color3-meegotouch-button-background-pressed $CORNER_MARGINS;
+}
+
+MapInfobar MButtonStyle#CommonSmallIconButtonInverted.Portrait {
+    minimum-size: 300px 48px;
+    maximum-size: 300px 48px;
+    preferred-size: 300px 48px;
+}
+
+MapInfobar MButtonStyle#CommonSmallIconButtonInverted.Landscape {
+    minimum-size: 480 48px;
+    maximum-size: 480px 48px;
+    preferred-size: 480px 48px;
+}
+

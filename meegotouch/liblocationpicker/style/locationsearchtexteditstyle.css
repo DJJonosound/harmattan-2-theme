@@ -1,0 +1,28 @@
+LocationSearchTextEditStyle {
+    padding-right: 45px;
+    spinner-style-name: "CommonViewHeaderSpinner";
+    location-icon-object-name: "location";
+    search-icon-object-name: "search";
+    location-icon-id: "icon-s-common-location";
+    search-icon-id: "icon-m-common-search";
+}
+
+LocationSearchTextEdit MCompleterStyle#locationSearchTextEditCompleter {
+    highlight-color: #00ff00;
+}
+
+LocationSearchTextEdit MSpinnerStyle#CommonViewHeaderSpinner {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+LocationSearchTextEdit MButtonIconStyle#location {
+    content-opacity: 1.0;
+}
+
+LocationSearchTextEdit MButtonIconStyle#search {
+    content-opacity: 1.0;
+}
+

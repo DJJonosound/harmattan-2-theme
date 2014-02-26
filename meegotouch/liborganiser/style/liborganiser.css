@@ -1,0 +1,321 @@
+/*
+  TODO vrt. ALG 1.1 
+  
+( - combotext selected seems to be missing; I'm using
+meegotouch-textedit-commob-background-selected, it was ok according to
+email.. )
+
+  
+*/
+
+@const ICON32: 3.2mm 3.2mm;
+
+MListStyle#NotebookWidgetList {
+    horizontal-separator-object-name: "CommonItemDivider";
+}
+
+#NotebookWidgetColorBox {
+    margin-right: $INDENT_DEFAULT;
+
+    minimum-size: 0.6mm 2.8mm;
+    maximum-size: 0.6mm 2.8mm;
+    preferred-size: 0.6mm 2.8mm;
+    stripe-mask-image: "meegotouch-calendar-colorstripe-mask" 1 1 1 1;
+}
+
+#NotebookColorSelectColorBox {
+    minimum-size: 32 32;
+    maximum-size: 32 32;
+    preferred-size: 32 32;
+}
+
+NotebookWidgetPickerStyle {
+    margin-left: $PADDING_DOUBLE;
+    margin-right: $PADDING_DOUBLE;
+}
+
+#NotebookPickerColorBox {
+    margin-right: $MARGIN_DOUBLE;
+    margin-top: $MARGIN_DOUBLE;
+    margin-bottom: $MARGIN_DOUBLE;
+    margin-left: 0;
+    minimum-size: -1 -1;
+    maximum-size: -1 -1;
+    preferred-size: -1 -1;
+    stripe-mask-image: "meegotouch-calendar-colorstripe-mask" 4 4 4 4;
+}
+
+#EditNotebookPickerColorBox {
+    margin-right: $MARGIN_XXLARGE;
+    margin-top: $MARGIN_DOUBLE;
+    margin-bottom: $MARGIN_DOUBLE;
+    margin-left: 0;
+    minimum-size: $ICON32;
+    maximum-size: $ICON32;
+    preferred-size: $ICON32;
+}
+
+#NotebookPickerColorStripe {
+    margin-right: $MARGIN_DOUBLE;
+    margin-top: $MARGIN_DOUBLE;
+    margin-bottom: $MARGIN_DOUBLE;
+    minimum-size: 0.6mm 2.8mm;
+    maximum-size: 0.6mm 2.8mm;
+    preferred-size: 0.6mm 2.8mm;
+    stripe-mask-image: "meegotouch-calendar-colorstripe-mask" 1 1 1 1;
+}
+
+#NotebookPickerColorStripe2 {
+    margin-left: 1.2mm;
+    margin-right: $MARGIN_XXLARGE;
+    margin-top: 0;
+    margin-bottom: 0;
+    minimum-size: 0.6mm 2.8mm;
+    maximum-size: 0.6mm 2.8mm;
+    preferred-size: 0.6mm 2.8mm;
+    stripe-mask-image: "meegotouch-calendar-colorstripe-mask" 4 4 4 4;
+}
+
+#TextEditButtonComboTextEdit {
+     background-image: "meegotouch-textedit-background-horizontal-left" $CORNER_MARGINS;
+     margin-right: 0;
+     margin-left: $MARGIN_XLARGE;
+     margin-top: $MARGIN_MEDIUM;
+     margin-bottom: 10px;
+     minimum-size: -1 52px;
+     preferred-size: -1 52px;
+     maximum-size: -1 52px;
+}
+
+#NotebookPickerCommonComboBoxIcon {
+     margin-right: 32;
+     minimum-size: 32 32;
+     preferred-size: 32 32;
+     maximum-size: 32 32;
+     background-image: "meegotouch-combobox-indicator" 0 0 0 0;
+}
+
+#NotebookPickerCommonComboBoxIcon:pressed {
+    background-image: "meegotouch-combobox-indicator-inverted" 0 0 0 0;
+}
+
+#TextEditButtonComboTextEdit:selected {
+     background-image: "meegotouch-textedit-background-selected-horizontal-left" $CORNER_MARGINS;
+}
+
+#TextEditButtonComboButton {
+     background-image: "meegotouch-textedit-button-background-horizontal-right" $CORNER_MARGINS;
+     margin-left: 0;
+     margin-right: $MARGIN_XLARGE;
+     margin-top: $MARGIN_MEDIUM;
+     margin-bottom: 10px;
+     minimum-size: 59px 52px;
+     preferred-size: 59px 52px;
+     maximum-size: 59px 52px;
+}
+
+#TextEditButtonComboButton:pressed {
+     background-image: "meegotouch-textedit-button-background-pressed-horizontal-right" $CORNER_MARGINS;
+}
+
+#TextEditButtonComboButton.Portrait {
+     background-image-top: "meegotouch-textedit-button-background-vertical-top" $CORNER_MARGINS; 
+     background-image-center: "meegotouch-textedit-button-background-vertical-center" $CORNER_MARGINS; 
+     background-image-bottom: "meegotouch-textedit-button-background-vertical-bottom" $CORNER_MARGINS; 
+}
+
+#TextEditButtonComboButton:pressed.Portrait {
+     background-image-top: "meegotouch-textedit-button-background-pressed-vertical-top" $CORNER_MARGINS; 
+     background-image-center: "meegotouch-textedit-button-background-pressed-vertical-center" $CORNER_MARGINS; 
+     background-image-bottom: "meegotouch-textedit-button-background-pressed-vertical-bottom" $CORNER_MARGINS; 
+}
+
+#NoteWidgetDetailsWidget {
+    maximum-size: 86 -1;
+    minimum-size: 86 -1;
+    preferred-size: 86 -1;
+
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#ListHeaderPanelToday {
+    background-image: "meegotouch-calendar-listheader-current" 0 0 0 0;
+    minimum-size: -1 40;
+    maximum-size: -1 40;
+    padding-left: $INDENT_DEFAULT;
+}
+
+#ListHeaderPanelRegular {
+    background-color: #E7E7E7;
+    minimum-size: -1 40;
+    maximum-size: -1 40;
+    padding-left: $INDENT_DEFAULT;
+}
+
+#ListHeaderLabel {
+    font: $FONT_SMALL_BOLD
+}
+
+
+// CalendarColorSelection{Button,Container} used by libcolorpicker0
+
+
+#CalendarColorSelectionDialogFrame.Landscape {
+    margin-left: 3.3mm;
+    margin-right: 3.3mm;
+}
+
+#CalendarColorSelectionButton.Landscape {
+    minimum-size: 70px 42px;
+    maximum-size: 70px 42px;
+    preferred-size: 70px 42px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#CalendarColorSelectionButton.Portrait {
+    minimum-size: 8mm 8mm;
+    maximum-size: 8mm 8mm;
+    preferred-size: 8mm 8mm;
+    margin-top: 0.3mm;
+    margin-bottom: 0.3mm;
+    margin-left: 0.3mm;
+    margin-right: 0.3mm;
+}
+
+#CalendarColorSelectionContainer.Landscape {
+    background-color: #000000;
+    margin-top: 0.7mm;
+    margin-bottom: 0.7mm;
+    margin-left: 1.1mm;
+    margin-right: 1.1mm;
+}
+
+#CalendarColorSelectionContainer.Portrait {
+    background-color: #000000;
+    margin-top: 2.3mm;
+    margin-bottom: 2.3mm;
+    margin-left: 0.9mm;
+    margin-right: 0.9mm;
+}
+
+
+#EventDetailHeader {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    minimum-size: -1 4mm;
+    maximum-size: -1 4mm;
+    preferred-size: -1 4mm;
+    image: "meegotouch-view-header-colored" 10 10 10 10;
+    gradient: true;
+    label-style: "CommonSingleTitleInverted";
+    color: ;
+}
+
+#EventEditHeader {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    minimum-size: -1 4mm;
+    maximum-size: -1 4mm;
+    preferred-size: -1 4mm;
+    image: "meegotouch-view-header" 10 10 10 10;
+    gradient: false;
+    label-style: "CommonViewHeader";
+    color: ;
+}
+
+#OrganiserApplicationHeader {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    minimum-size: 100% 8mm;
+    maximum-size: 100% 8mm;
+    preferred-size: 100% 8mm;
+    image: ;
+    gradient: false;
+    label-style: "CommonApplicationHeader";
+    color: ;
+}
+
+#EditNotebookApplicationHeader {
+    minimum-size:      100% -1;
+    preferred-size:    100% -1;
+    maximum-size:      100% -1;
+    margin-top:        0;
+    margin-bottom:     0;
+    margin-left:       0;
+    margin-right:      0;
+    image: ;
+    label-style: ;
+    gradient: false;
+    color: ;
+}
+
+#AttachmentsHeader {
+    label-style: "CommonHeader";
+}
+
+#NoteWidgetSingleTitleAllDaySeparator {
+    background-color: black;
+    minimum-size:   0.3mm -1;
+    preferred-size: 0.3mm -1;
+    maximum-size:   0.3mm -1;
+    margin-right:   0;
+    margin-left:    0;
+    margin-bottom:  0;
+    margin-top:     0;
+}
+
+#NoteWidgetTitleAndSubtitleAllDaySeparator {
+    background-color: black;
+    minimum-size:   0.3mm -1;
+    preferred-size: 0.3mm -1;
+    maximum-size:   0.3mm -1;
+    margin-right:   0;
+    margin-left:    0;
+    margin-bottom:  0;
+    margin-top:     1.5mm;
+}
+
+#EmptyContentWidget {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    minimum-size: -1 -1;
+    maximum-size: -1 -1;
+    preferred-size: -1 -1;
+}
+
+#NoteEditWidgetSwitchCommonPanel {
+    minimum-size: -1 8mm;
+    maximum-size: -1 8mm;
+    preferred-size: -1 8mm;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+#NotebookManagementView {
+    background-color: transparent;
+}

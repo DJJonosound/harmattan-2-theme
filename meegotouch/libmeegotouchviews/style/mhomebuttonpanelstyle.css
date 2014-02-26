@@ -1,0 +1,24 @@
+/* MHomeButtonPanelStyle : MSceneWindowStyle */
+MHomeButtonPanelStyle {
+
+    minimum-size: 0 0;
+    maximum-size: 0 0;
+    preferred-size: 0 0;
+
+    vertical-align: top;
+    horizontal-align: left;
+    offset: 0 0;
+
+    home-button-object-name: "HomeButton";
+    home-button-icon-id: "";
+}
+
+MButtonIconStyle#HomeButton {
+    minimum-size: 0 0;
+    maximum-size: 0 0;
+    preferred-size: 0 0;
+
+    reactive-margin-left: 0;
+    reactive-margin-right: 0;
+    reactive-margin-bottom: 0;
+}

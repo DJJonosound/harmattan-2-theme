@@ -1,0 +1,106 @@
+/* Common Style Definitions */
+
+TagButtonStyle {
+    minimum-size: 8.8mm 8.0mm;
+    preferred-size: -1 -1;
+    maximum-size: 137mm 16.0mm;
+    margin-right: $MARGIN_XLARGE;
+    margin-left: $MARGIN_XLARGE;
+    font-size-list: "24 30 36 42 48 54 60";
+}
+
+TagButton MLabelStyle#tagLabel {
+    color: $COLOR_FOREGROUND;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    maximum-size: 33mm 14.0mm;
+}
+
+TagButton MLabelStyle#tagLabelInverted {
+    color: $COLOR_INVERTED_FOREGROUND;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    maximum-size: 33mm 14.0mm;
+}
+
+TagButton MLabelStyle#tagLabelSelected {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $COLOR_ACCENT1;
+    maximum-size: 33mm 14.0mm;
+}
+
+TagButton MLabelStyle#tagLabelDisabled {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    minimum-size: 0 0;
+    preferred-size: 0 0;
+    maximum-size: 0 0;
+}
+
+TagButton MLabelStyle#shortTagLabelSelected {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $COLOR_ACCENT1;
+    maximum-size: 24mm 16.0mm;
+}
+
+TagButtonStyle#tagFavorite {
+    icon-id: "icon-m-common-favorite-mark";
+    toggled-icon-id: "icon-m-common-favorite-mark-selected";
+}
+
+TagButtonStyle#tagFavoriteInverted {
+    icon-id: "icon-m-common-favorite-mark-inverse";
+    toggled-icon-id: "icon-m-common-favorite-mark-selected";
+}
+
+TagButtonStyle#geoTag {
+    icon-id: "icon-m-common-location";
+    toggled-icon-id: "icon-m-common-location-selected";
+}
+
+TagButtonStyle#geoTagInverted {
+    icon-id: "icon-m-common-location-inverse";
+    toggled-icon-id: "icon-m-common-location-selected";
+}
+
+/*icon-m-gallery-favorite-mark-selected*/ 
+/*icon-m-gallery-location-selected*/
+
+/* MTransientItemTaggingWidget Component Style Definitions */
+
+MTransientItemTaggingWidget MLabelStyle#TagBodyText {
+    font: $FONT_DEFAULT;
+    color: $COLOR_FOREGROUND;
+    margin-top: 0.0mm;
+    margin-bottom: 0.0mm;
+    margin-left: 0.0mm;
+    margin-right: 0.0mm;
+}
+
+MTransientItemTaggingWidget MWidgetStyle#userTagsWidget {
+    margin-right: $MARGIN_XXLARGE;
+    margin-left: $MARGIN_XXLARGE;
+    margin-top: $MARGIN_DOUBLE;
+    margin-bottom: $MARGIN_SMALL;
+}
+
+MTransientItemTaggingWidget MLabelStyle#noTagsLabel {
+    font: $FONT_DEFAULT;
+    margin-right: $MARGIN_XXLARGE;
+    margin-left: $MARGIN_XXLARGE;
+    margin-top: $MARGIN_DOUBLE;
+    margin-bottom: $MARGIN_SMALL;
+}
+

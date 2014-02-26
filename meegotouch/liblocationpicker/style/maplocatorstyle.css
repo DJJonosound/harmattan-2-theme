@@ -1,0 +1,13 @@
+MapLocatorStyle {
+    minimum-size: 80 80;
+    maximum-size: 80 80;
+    preferred-size: 80 80;
+    map-locator-icon-id: "icon-m-common-location";
+    long-press-time: 100;
+    min-vertical-slide: -3.5mm;
+    max-vertical-slide: -10.0mm;
+    rotation-easing-curve: outcubic;
+    rotation-duration: 110;
+    bounding-box-extend: 70;
+}
+

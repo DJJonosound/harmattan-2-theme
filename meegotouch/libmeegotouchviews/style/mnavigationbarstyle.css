@@ -1,0 +1,37 @@
+MNavigationBarStyle {
+    vertical-align: bottom;
+    padding-left: 0;
+    has-title: false;
+    has-close-button: false;
+    drop-shadow-image: meegotouch-menu-shadow-top 15px 15px 5px 5px;
+}
+MNavigationBarStyle.Landscape {
+    background-image: "meegotouch-tabbar-landscape-bottom-background" 27px 27px 27px 27px;
+}
+MNavigationBarStyle.Portrait {
+    background-image: "meegotouch-tabbar-portrait-bottom-background" 35px 35px 35px 35px;
+}
+
+#MNavigationBarBackButton
+{
+    icon-id: "icon-m-toolbar-back";
+    icon-size: 52px 52px;
+}
+
+#MNavigationBarMenuButton
+{
+    icon-id: "icon-m-toolbar-view-menu";
+    icon-size: 40px 40px;
+
+    minimum-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+    preferred-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+    maximum-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+}
+#MNavigationBarMenuButton.Landscape
+{
+    minimum-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_LANDSCAPE;
+    preferred-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_LANDSCAPE;
+    maximum-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_LANDSCAPE;
+}
+
+

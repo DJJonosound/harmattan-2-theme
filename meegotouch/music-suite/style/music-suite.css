@@ -1,0 +1,314 @@
+@import "playerview.css";
+@import "songdetailview.css";
+@import "music-search.css";
+@import "../../libmediasuite/style/libmediasuite.css";
+
+@const TBB_CORNERS: 20px 20px 20px 20px;
+@const SCREEN_SIZE: 480px 854px;
+
+#CommonToolbarButtonInverted {
+    padding-left: $PADDING_DOUBLE;
+    preferred-size: -1 -1;
+    minimum-size: 186px 42px;
+    maximum-size: 256px 42px;
+    text-margin-left: $MARGIN_LARGE;
+    horizontal-text-align: hcenter;
+    text-color: $COLOR_ACCENT12;
+}
+
+MApplicationExtensionAreaStyle {
+    container-mode: false;
+}
+
+#albumArtOfSongPage.Portrait {
+    minimum-size: 15.8mm 15.8mm;
+    maximum-size: 15.8mm 15.8mm;
+    preferred-size: 15.8mm 15.8mm;
+
+    margin-left: $INDENT_DEFAULT;
+}
+
+MLabelStyle#artistNameLabel {
+    font:          $FONT_FAMILY bold 22;
+    color:         $COLOR_INVERTED_FOREGROUND;
+    margin-left:   $INDENT_DEFAULT;
+    margin-top:    0;
+    margin-bottom: $MARGIN_LARGE;
+    margin-right:  $INDENT_DEFAULT;
+}
+
+#albumInfoLabel {
+    font:          $FONT_FAMILY light 22;
+    color:         $COLOR_INVERTED_FOREGROUND;
+    margin-left:   $INDENT_DEFAULT;
+    margin-top:    0;
+    margin-bottom: 0;
+    margin-right:  $INDENT_DEFAULT;
+}
+
+#PropertyLabel {
+    font:          $FONT_XSMALL;
+    color:         $COLOR_INVERTED_FOREGROUND;
+    margin-left:   $INDENT_DEFAULT;
+    margin-top:    0;
+    margin-bottom: 0;
+    margin-right:  $INDENT_DEFAULT;
+}
+
+#LatestActivityWidget {
+    minimum-size: 48.0mm 48.0mm;
+    maximum-size: 48.0mm 48.0mm;
+    preferred-size: 48.0mm 48.0mm;
+}
+
+MslOverlayLabelStyle#LatestActivityItem {
+    preferred-size: 15.6mm 15.6mm;
+    minimum-size: 15.6mm 15.6mm;
+    maximum-size: 15.6mm 15.6mm;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#LatestActivityItemBackground {
+    background-color: #000000;
+    background-opacity: 0.5;
+}
+
+#LatestActivityItemText {
+    font: $FONT_XSMALL_LIGHT;
+    color: $COLOR_INVERTED_FOREGROUND;
+}
+
+MslOverlayLabelStyle#NowPlayingLabel {
+    preferred-size: 31.8mm 31.8mm;
+    minimum-size: 31.8mm 31.8mm;
+    maximum-size: 31.8mm 31.8mm;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#NowPlayingLabelBackground {
+    background-image: meegotouch-music-main-nowplaying 10px 10px 10px 10px;
+
+    margin-left: 6px;
+    margin-top: 0;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+#NowPlayingLabelText {
+    color: $COLOR_INVERTED_FOREGROUND;
+    font: $FONT_XSMALL_BOLD;
+
+    margin-left: 6px;
+    margin-top: 0;
+    margin-right: 6px;
+    margin-bottom: 0mm;
+}
+
+#NowPlayingLabelIcon {
+    margin-left: 6px;
+}
+
+MApplicationPageStyle.Portrait {
+    background-image: "meegotouch-video-background";
+}
+
+MApplicationPageStyle#AudioPlayerView.Portrait {
+    background-image: "meegotouch-applicationpage-portrait-background-inverted";
+}
+
+
+#CommonTitleAccented {
+    color: $COLOR_ACCENT12;
+}
+
+#CommonSubTitleAccented {
+    color: $COLOR_ACCENT12;
+}
+
+#CommonSingleTitleAccented {
+    color: $COLOR_ACCENT12;
+}
+
+#MainPageEmptyLabel
+{
+    font: $FONT_FAMILY_LIGHT 62;
+    color: $COLOR_ACCENT12;
+    margin-left: $INDENT_DEFAULT;
+    margin-right: $INDENT_DEFAULT;
+    margin-top: $MARGIN_XXLARGE;
+}
+
+#ShuffleWidgetSpinnerLeft {
+    base-image-name: "spinnerinverted";
+    base-image-size: $SIZE_SPINNER_LARGE;
+    margin-top:      $MARGIN_LARGE;
+    margin-bottom:   $MARGIN_LARGE;
+    margin-left:     $INDENT_DEFAULT;
+    margin-right:    0;
+    minimum-size:    $SIZE_ICON_XLARGE $SIZE_ICON_XLARGE;
+    preferred-size:  $SIZE_ICON_XLARGE $SIZE_ICON_XLARGE;
+    maximum-size:    $SIZE_ICON_XLARGE $SIZE_ICON_XLARGE;
+}
+
+MWindowStyle {
+    x11-startup-pixmap: ;
+    startup-fill-color: black;
+}
+
+MWindowStyle.Landscape {
+    x11-startup-pixmap: ;
+    startup-fill-color: black;
+}
+
+#NavigationBarWidget {
+    minimum-size: -1 $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+    maximum-size: 48mm $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+    preferred-size: 48mm $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+}
+
+MButtonStyle#NavigationBarButton {
+    minimum-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+    preferred-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+    maximum-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+}
+
+MButtonStyle#NavigationBarMenuButtonInverted {
+    icon-size: 4.0mm 4.0mm;
+    minimum-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+    preferred-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+    maximum-size: $WIDTH_HOMECLOSEBUTTON $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+}
+
+#IndexingProgressWidget {
+    minimum-size: $SCREEN_SIZE;
+    maximum-size: $SCREEN_SIZE;
+    preferred-size: $SCREEN_SIZE;
+    background-color: black;
+    background-opacity: 0.9;
+}
+
+// These next two things are not used in music-suite anymore, but
+// ipradio/src/nowplaying/iradionowplayingpage.cpp uses them
+#playerViewAlbumArt.Landscape {
+    minimum-size: 39mm 39mm;
+    maximum-size: 39mm 39mm;
+    preferred-size: 39mm 39mm;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#playerViewAlbumArt.Portrait {
+    minimum-size: 48mm 48mm;
+    maximum-size: 48mm 48mm;
+    preferred-size: 48mm 48mm;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#CommonSearchFieldInverted {
+    padding-right: 52px;
+}
+
+#CommonSearchFieldInverted:selected {
+    background-image: color12-meegotouch-textedit-inverted-background-selected $CORNER_MARGINS;
+}
+
+#SearchMagnifier {
+}
+
+#ClearButton {
+    minimum-size: $SIZE_BUTTON $SIZE_BUTTON;
+    preferred-size: $SIZE_BUTTON $SIZE_BUTTON;
+    maximum-size: $SIZE_BUTTON $SIZE_BUTTON;
+    icon-size: $SIZE_ICON_LARGE $SIZE_ICON_LARGE;
+}
+
+/* CUSTOM STYLE FOR SONGS OF ARTIST PAGE */
+#CommonVerySmallPanelInverted {
+    minimum-size:      32px 32px;
+    preferred-size:    -1 32px;
+    maximum-size:      -1 32px;
+    background-tiles:  ;
+    background-image:  $CP_INVERTED_BG;
+    background-color:  ;
+    margin-top:        0;
+    margin-bottom:     15px;
+    margin-left:       0;
+    margin-right:      0;
+}
+
+/* CUSTOM STYLE FOR MAIN COLLECTION PAGES (height 10px smaller than #CommonSmallPanelInverted). */
+#CommonBasicSmallPanelInverted {
+    minimum-size:      54px 54px;
+    preferred-size:    -1 54px;
+    maximum-size:      -1 54px;
+    background-tiles:  ;
+    background-image:  $CP_INVERTED_BG;
+    background-color:  ;
+    margin-top:        0;
+    margin-bottom:     0;
+    margin-left:       0;
+    margin-right:      0;
+}
+
+#NoFilteredResultsLabel {
+    font: $FONT_FAMILY_LIGHT 6.2mm;
+    color: $COLOR_INVERTED_FOREGROUND;
+    margin-top:    12mm;
+    margin-bottom: 0;
+    margin-left:   0;
+    margin-right:  0;
+    text-opacity: 0.5;
+}
+
+#NoFilteredResultsLabelVKBClosed {
+    font: $FONT_FAMILY_LIGHT 6.2mm;
+    color: $COLOR_INVERTED_FOREGROUND;
+    margin-top:    22mm;
+    margin-bottom: 0;
+    margin-left:   0;
+    margin-right:  0;
+    text-opacity: 0.5;
+}
+
+#CommonEmptyStateTitleInverted {
+    color: $COLOR_ACCENT12;
+}
+
+#SongCollectionListItemSpacer {
+    minimum-size:   0 0;
+    preferred-size: $MARGIN_XLARGE 100%;
+    maximum-size:   $MARGIN_XLARGE 100%;
+    margin-top:     $MARGIN_XLARGE;
+    margin-bottom:  0;
+    margin-left:    0;
+    margin-right:   0;
+}
+
+#SongPageBottomSpacer {
+    minimum-size: 0 0;
+    preferred-size: 0 0;
+    maximum-size: 0 $HEIGHT_NAVIGATIONBAR_PORTRAIT;
+}
+
+#CommonSheetHeaderButtonAccentInverted {
+    background-image: color12-meegotouch-sheet-button-accent-inverted-background $TBB_CORNERS;
+}
+
+#CommonSheetHeaderButtonAccentInverted:pressed {
+    background-image: color12-meegotouch-sheet-button-accent-inverted-background-pressed $TBB_CORNERS;
+}

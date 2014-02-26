@@ -1,0 +1,80 @@
+#VideoSuiteGridCellTimeLabel {
+    font: $FONT_XSMALL;
+    color: #c8c8c8;
+    background-image : "meegotouch-video-duration-background" 10px 10px 10px 10px;
+
+    minimum-size:   6.6mm -1;
+    preferred-size: 6.6mm -1;
+    maximum-size:   6.6mm -1;
+
+    margin-top: $MARGIN_LARGE;
+    margin-bottom: $MARGIN_LARGE;
+    margin-left: $MARGIN_LARGE;
+    margin-right: $MARGIN_LARGE;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: $MARGIN_LARGE;
+    padding-right: $MARGIN_LARGE;
+}
+
+#VideoSuiteGridCellTimeLabelLong {
+    font: $FONT_XSMALL;
+    color: #c8c8c8;
+    background-image : "meegotouch-video-duration-background" 10px 10px 10px 10px;
+
+    minimum-size:   9mm -1;
+    preferred-size: 9mm -1;
+    maximum-size:   9mm -1;
+
+    margin-top: $MARGIN_LARGE;
+    margin-bottom: $MARGIN_LARGE;
+    margin-left: $MARGIN_LARGE;
+    margin-right: $MARGIN_LARGE;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: $MARGIN_LARGE;
+    padding-right: $MARGIN_LARGE;
+}
+
+#VideoSuiteGridCellTimeLabelPaused {
+    font: $FONT_XSMALL;
+    color: $COLOR_ACCENT11;
+    background-image : "meegotouch-video-duration-background" 10px 10px 10px 10px;
+
+    minimum-size:   6.6mm -1;
+    preferred-size: 6.6mm -1;
+    maximum-size:   6.6mm -1;
+
+    margin-top: $MARGIN_LARGE;
+    margin-bottom: $MARGIN_LARGE;
+    margin-left: $MARGIN_LARGE;
+    margin-right: $MARGIN_LARGE;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: $MARGIN_LARGE;
+    padding-right: $MARGIN_LARGE;
+}
+
+#VideoSuiteGridCellTimeLabelPausedLong {
+    font: $FONT_XSMALL;
+    color: $COLOR_ACCENT11;
+    background-image : "meegotouch-video-duration-background" 10px 10px 10px 10px;
+
+    minimum-size:   9mm -1;
+    preferred-size: 9mm -1;
+    maximum-size:   9mm -1;
+
+    margin-top: $MARGIN_LARGE;
+    margin-bottom: $MARGIN_LARGE;
+    margin-left: $MARGIN_LARGE;
+    margin-right: $MARGIN_LARGE;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: $MARGIN_LARGE;
+    padding-right: $MARGIN_LARGE;
+}
+
