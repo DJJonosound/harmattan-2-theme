@@ -14,3 +14,6 @@ flx9,
 
 =================
 If you have just joined, add your name to the list above!
+
+Template for icons available at:
+https://www.dropbox.com/s/c82i1pgszwi9p8s/ex.psd
