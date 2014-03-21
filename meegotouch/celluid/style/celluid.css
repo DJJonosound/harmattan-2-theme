@@ -1,9 +1,0 @@
-@const C_DEVLOCK_NUMPAD_OK_PADDING_VER: 0.0mm;
-@const C_DEVLOCK_NUMPAD_OK_MARGIN_VER: 0.0mm;
-
-NumpadButton#celluiButtonOk MLabelStyle#celluiNumpadButtonPrimaryLabel {
-    margin-top: 1.4mm;
-}
-Numpad MLabelStyle#celluiNumpadButtonSecondaryLabel {
-    margin-top: 1mm;
-}

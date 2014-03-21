@@ -1,9 +1,0 @@
-/* MWidgetSlidedeAnimationStyle : MAbstractWidgetAnimationStyle */
-
-MNavigationBar MWidgetSlideAnimationStyle#In {
-    origin: "bottom";
-}
-
-MNavigationBar MWidgetSlideAnimationStyle#Out {
-    origin: "bottom";
-}

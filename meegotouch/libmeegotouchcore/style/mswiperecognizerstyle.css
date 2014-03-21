@@ -1,7 +1,0 @@
-MSwipeRecognizerStyle {
-    timeout: 300;    
-    distance-threshold: 5mm;
-    angle-threshold: 30;
-    angle-snapping-threshold: 22.5;
-    jitterThreshold: 10mm;
-}
